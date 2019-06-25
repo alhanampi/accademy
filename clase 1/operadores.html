@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<script>
+
+		var cuenta = parseInt(5 / 3) // va a devolver un entero
+		console.log(cuenta);
+
+		cuenta = Number(5 / 3) // va a devolver con decimales
+		console.log(cuenta);
+
+		cuenta = Number(5 % 3) // va a devolver el resto. Nunca va a devolver un numero mayor al segundo, dividiendo por 2 se puede usar para sacar par o impar
+		console.log(cuenta);
+
+		var a = prompt('ingrese un numero'); // todos los prompt son string, debe ser convertido
+		var b = prompt('ingrese otro numero');
+		
+		//con parseInt se convierte en numero. Mismo con number
+		a = parseInt(a)
+		b = Number (b) 
+
+		var resultado = a + b * 4 // va a hacer primero b*4 por el orden de operadores, excepto que ponga parentesis
+		console.log(resultado)
+
+	</script>
+</body>
+
+</html>

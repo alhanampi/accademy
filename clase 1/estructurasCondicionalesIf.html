@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<script>
+
+		var acceso = confirm('Desea ingresar?')
+
+		if (acceso) {
+			var edad = prompt('ingrese su edad')
+			if (edad >= 0 && edad < 5) {
+				alert('es un bebé de ' + edad + ' años')
+			} else if (edad >= 5 && edad < 12) {
+				alert('es un niño de ' + edad + ' años')
+			} else if (edad >= 12 && edad < 19) {
+				alert('es un adolescente de ' + edad + ' años')
+			} else if (edad >= 19 && edad < 120) {
+				alert('es un adulto de ' + edad + ' años')
+				alert('Bienvenido')
+				if (edad >= 25) {
+					var respuesta = confirm('querés un trago gratis?')
+					if(respuesta) {
+						alert('en camino!')
+					} else {
+						alert('pídalo cuando quiera!')
+					}
+				}
+			} else {
+				alert('hubo un error.')
+			}
+		}
+		else {
+			alert('bueno, chau.')
+		}
+
+	</script>
+
+</body>
+
+</html>

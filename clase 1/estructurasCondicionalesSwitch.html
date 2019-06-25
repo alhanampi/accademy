@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>switch</title>
+</head>
+
+<body>
+
+
+	<script>
+
+		//cada dia de la semana tiene un numero en el getDate, se puede usar para imprimir diferentes mensajes en el switch:
+
+		var date = new Date();
+		document.write(date + '<br>')
+		var numeroDeDia = date.getDay(); // metodo getDate sirve para conseguir la fecha actual
+
+		var dia = '';
+		switch (numeroDeDia) {
+			case 0:
+				dia = 'domingo'
+				break;
+			case 1:
+				dia = 'lunes'
+				break;
+			case 2:
+				dia = 'martes'
+				break;
+			case 3:
+				dia = 'miercoles'
+				break;
+			case 4:
+				dia = 'jueves'
+				break;
+			case 5:
+				dia = 'viernes'
+				break;
+			case 6:
+				dia = 'sabado'
+				break;
+			default:
+				dia = 'desconocido'
+				break;
+		}
+		
+		document.write('el dia de la semana es ' + dia + '<br>')
+
+
+	</script>
+
+</body>
+
+</html>

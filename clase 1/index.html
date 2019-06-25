@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>clase1 JS</title>
+</head>
+
+<body>
+
+	<h1>Clase 1 JS</h1>
+
+	<script>
+		// console log es secuencial y no bloqueante
+		console.log('hola mundo');
+		console.log('hola mundo 2');
+		console.log('hola mundo 3')
+
+		// escribe dentro del html, se le puede inyectar etiquetas y estilos
+		document.write('<h2 style="color:maroon">hola mundo</h2>');
+
+		// el alert bloquea el navegador y queda esperando a que se apriete el aceptar, no continuan las ejecuciones. En algunos casos no ejecuta el código que esté antes del alert, impidiendo el render
+		// alert('este es un alert');
+
+		var numero = 145;
+		console.log(typeof numero); //devuelve el tipo de esa variable usando el typeof
+
+		//JS tiene typing debil, se puede cambiar el tipo fácilmente.
+		numero = true;
+		console.log(typeof numero);
+
+		var a = 5;
+		var b = 8;
+
+		//operacion aritmetrica:
+		var resultado = a + b;
+		console.log('resultado: ' + resultado);
+
+				
+		a = 'hola ';
+		b = 'mundo';
+
+		resultado = a + b;
+		console.log(resultado)
+
+		alert (resultado)
+
+
+	</script>
+
+</body>
+
+</html>
