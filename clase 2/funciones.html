@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        function sumar(a, b) {
+            return a + b;
+        }
+
+        var suma = sumar(5, 16)
+        console.log(suma)
+
+        var numero = 5;
+        var suma = sumar(3, numero);
+        console.log(suma)
+
+
+        function romanos(numeros) {
+            var num = parseInt(numeros)
+            var roman = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+            return roman[num - 1]
+        }
+
+        do {
+            var numConv = prompt('ingrese un numero de 1 a 10');
+                if (numConv >= 1 && numConv <= 10) {
+                numConv = romanos()
+            } else {
+                numConv = 'ingrese un número válido'
+            }
+
+            console.log(numConv)
+        } while (confirm('desea continuar?')) //con esto bloquea y pregunta si quiero continuar
+
+
+     
+
+    </script>
+
+</body>
+
+</html>

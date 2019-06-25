@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" , initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<script>
+
+		//ciclo do while:
+		var contador = 10;
+
+		do {
+			contador = contador - 1
+			document.write(contador)
+		} while (contador > 0)
+
+		document.write('<hr>')
+
+		//ciclo while:
+		var contador = 0;
+
+		while (contador < 5) {
+			contador += 1 // += equivale a hacer contador = contador + 1. Salva el resultado sobre la variable
+			document.write(contador)
+		}
+
+		document.write('<hr>')
+
+		//ciclo for:
+
+		var cont = 0;
+
+		for (var i = 0; i < 5; i++) {
+			i = i++
+			document.write(i)
+		}
+
+		document.write('<br>')
+
+		//recorrer array con for:
+		var roman = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII']
+
+		for (var i = 0; i < roman.length; i++) {
+			console.log(roman[i])
+		}
+
+		//recorrer el mismo con while:
+		var i = 0;
+
+		while (i < roman.length) {
+			console.log(roman[i]);
+			i += 2; //saltea numeros
+		}
+
+		//recorrer con do while:
+		var j = 0;
+		do {
+			console.log(roman[j++])
+		} while (j < roman.length)
+
+		//representar numeros de 1 al 10 de forma decreciente:
+
+		for (var i = 10; i >= 0; i--) {
+			if(i == 7) continue; //saltea este numero, continua con el siguiente
+			console.log(i)
+			if(i == 3) break; //se puede cortar el ciclo acá con esto
+		}
+
+	</script>
+</body>
+
+</html>

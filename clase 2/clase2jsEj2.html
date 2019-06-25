@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //ejercicio 2
+
+        var segundos = 0
+        var minutos = 0
+        var horas = 0
+        var dias = 0
+        var conversor = prompt('Ingrese la cantidad de segundos que quiere calcular.');
+
+        //segundos = parseInt(conversor)
+        if (conversor < 60) {
+            segundos = conversor
+        } else if (conversor >= 60 && conversor <= 3600) {
+            minutos = (conversor / 60);
+            segundos = (conversor % 60);
+        } else if (conversor >= 3601 && conversor <= 86400) {
+            horas = (conversor / 60)
+            minutos = (horas % 60)
+            segundos = (minutos % 60)
+        } else  {
+            dias = (conversor / 24 / 60 / 60)
+            horas = (dias % 24)
+            minutos = (horas % 60)
+            segundos = (minutos % 60)
+            console.log('segundos' + segundos)
+            console.log('minutos' + minutos)
+            console.log('horas' + horas)
+            console.log('dias' + dias)
+
+        }
+
+//        alert('la cantidad de segundos ingresados es de ' + dias + ' dia/s, ' + horas + ' horas/s, ' + minutos + ' minuto/s, ' + segundos + ' segundos.');
+
+
+    </script>
+</body>
+
+</html>

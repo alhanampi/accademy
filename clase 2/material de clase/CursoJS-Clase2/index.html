@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+
+    <script>
+
+        function convAnumRomano(numero) {
+            var num = parseInt(numero);
+            var numerosRomanos = [
+                'I',
+                'II',
+                'III',
+                'IV',
+                'V',
+                'VI',
+                'VII',
+                'VIII',
+                'IX',
+                'X'
+            ]
+            return numerosRomanos[num - 1];
+        }
+
+
+        do {
+            var numeroRomano = '?';
+            var numero = prompt('Ingrese un número del 1 al 10');
+
+            if(numero >=1 && numero <=10) {
+                //Numero OK
+                numeroRomano = convAnumRomano(numero);
+                //numeroRomano = numerosRomanos[numero - 1];
+            }
+            else {
+                //Numero MAL
+                numeroRomano = 'entrada incorrecta!';
+            }
+            console.log(numeroRomano);
+        }
+        while(confirm('desea continuar?'));
+
+        /*
+        for(;;);
+        while(true);
+        do {
+
+        }while(true);
+        */
+        /*
+        for(var i=10; i>=0; i--) {
+            if(i==7) continue;
+            console.log(i);
+            if(i==3) break;
+            //i = 10;
+        }
+        */
+
+        /*
+        for(var i=0; i<numerosRomanos.length; i++){
+            console.log(numerosRomanos[i]);
+        }
+        */
+        /*
+        var i = 0;
+        while(i<numerosRomanos.length) {
+            console.log(numerosRomanos[i++]);
+            //i+=1;
+        }
+        */
+
+        /*
+        console.log(numerosRomanos[0]);
+        console.log(numerosRomanos[1]);
+        console.log(numerosRomanos[2]);
+        console.log(numerosRomanos[3]);
+        console.log(numerosRomanos[4]);
+        console.log(numerosRomanos[5]);
+        console.log(numerosRomanos[6]);
+        console.log(numerosRomanos[7]);
+        console.log(numerosRomanos[8]);
+        console.log(numerosRomanos[9]);
+        console.log(numerosRomanos[10]);
+        */
+
+
+
+        /*
+        if(numero <1 || numero >10) {
+            //Numero MAL
+        }
+        else {
+            //Numero OK
+        }
+
+        if(numero === 1) {
+            numeroRomano = 'I';
+        }
+        else if(numero == 2) {
+            numeroRomano = 'II';
+        }
+        else if(numero == 3) {
+            numeroRomano = 'III';
+        }
+        else if(numero == 4) {
+            numeroRomano = 'IV';
+        }
+        else if(numero == 5) {
+            numeroRomano = 'V';
+        }
+        else if(numero == 6) {
+            numeroRomano = 'VI';
+        }
+        else if(numero == 7) {
+            numeroRomano = 'VII';
+        }
+        else if(numero == 8) {
+            numeroRomano = 'VIII';
+        }
+        else if(numero == 9) {
+            numeroRomano = 'IX';
+        }
+        else if(numero == 10) {
+            numeroRomano = 'X';
+        }
+        else {
+            numeroRomano = 'entrada incorrecta!';
+        }
+        */
+        //console.log(typeof numero);
+        /*
+        switch (numero) {
+            case 1:
+                numeroRomano = 'I';
+                break;
+            case 2:
+                numeroRomano = 'II';
+                break;
+            case 3:
+                numeroRomano = 'III';
+                break;
+            case 4:
+                numeroRomano = 'IV';
+                break;
+            case 5:
+                numeroRomano = 'V';
+                break;
+            case 6:
+                numeroRomano = 'VI';
+                break;
+            case 7:
+                numeroRomano = 'VII';
+                break;
+            case 8:
+                numeroRomano = 'VIII';
+                break;
+            case 9:
+                numeroRomano = 'IX';
+                break;
+            case 10:
+                numeroRomano = 'X';
+                break;
+            default:
+                numeroRomano = 'entrada incorrecta!';
+                break;
+        }
+        */
+
+    </script>
+
+</body>
+
+</html>
