@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        var mesas = prompt('ingrese la cantidad de sillas por mesa')
+        var invitados = prompt('ingrese la cantidad de invitados')
+
+        function mesasCalc(mesas, invitados) {
+            var cantidad = Math.floor(invitados/mesas)
+            var resto = invitados % mesas
+
+            document.write('Con mesas con capacidad para ' + mesas + ' invitados, se necesitarán ' + cantidad + ' de mesas y quedarán ' + resto + ' de invitados sin mesa.')
+        }
+    
+    var total = mesasCalc(mesas, invitados)
+    </script>
+    
+</body>
+</html>
