@@ -14,37 +14,26 @@
     <script>
         //ejercicio 2
 
-        var segundos = 0
-        var minutos = 0
-        var horas = 0
-        var dias = 0
         var conversor = prompt('Ingrese la cantidad de segundos que quiere calcular.');
 
-        //segundos = parseInt(conversor)
-        if (conversor < 60) {
-            segundos = conversor
-        } else if (conversor >= 60 && conversor <= 3600) {
-            minutos = (conversor / 60);
-            segundos = (conversor % 60);
-        } else if (conversor >= 3601 && conversor <= 86400) {
-            horas = (conversor / 60)
-            minutos = (horas % 60)
-            segundos = (minutos % 60)
-        } else  {
-            dias = (conversor / 24 / 60 / 60)
-            horas = (dias % 24)
-            minutos = (horas % 60)
-            segundos = (minutos % 60)
-            console.log('segundos' + segundos)
-            console.log('minutos' + minutos)
-            console.log('horas' + horas)
-            console.log('dias' + dias)
 
+        var num = Number(conversor);
+
+        function convertir(num) {
+            var dia = Math.floor(num / (24 * 3600));
+            num = (num % (24 * 3600));
+            var hora = Math.floor(num / 3600);
+            num %= 3600;
+            var minutos = Math.floor(num / 60);
+            num %= 60;
+            var segundos = num;
+
+            document.write(dia + ' dias ' + hora + ' horas ' + minutos + ' minutos ' + segundos + ' segundos.');
         }
 
-//        alert('la cantidad de segundos ingresados es de ' + dias + ' dia/s, ' + horas + ' horas/s, ' + minutos + ' minuto/s, ' + segundos + ' segundos.');
+        var conversion = convertir(num)
 
-
+//https://www.geeksforgeeks.org/converting-seconds-into-days-hours-minutes-and-seconds/
     </script>
 </body>
 
