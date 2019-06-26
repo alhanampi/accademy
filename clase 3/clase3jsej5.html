@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //ejercicio 2:
+
+        var dinero
+        var ahorro = [];
+
+        do {
+            dinero = prompt('Ingrese su ahorro mensual')
+            if (dinero == 'x') break;
+            dinero = parseInt(dinero)
+            ahorro.push(dinero)
+            console.log('ahorro es: ' + ahorro + ' dinero es ' + dinero)
+        } while (true);
+
+        var suma;
+
+        for (var i = 0, suma = 0; i < ahorro.length; i++) {
+            suma += ahorro[i];
+        }
+
+        console.log('la cantidad ahorrada durante ' + ahorro.length + ' meses es de $' + suma)
+    </script>
+
+</body>
+
+</html>

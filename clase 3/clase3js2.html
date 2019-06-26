@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // do {
+        //     var dato = prompt('Ingrese un valor');
+        //     if (dato == 'x') {
+        //         dato = Number(dato);
+        //         console.log(dato)
+        //         alert(dato + ' tipo: ' + typeof dato)
+        //     } else break; //cuando es una sola línea se pueden obviar los corchetes
+        // }
+        // while (true) //puede ser también (dato != x) y se puede evitar el else.
+        // alert('fin del programa.')
+
+        //se puede achicar así:
+
+        var notasAcumuladas = 0;
+        var contador = 0
+
+        do {
+            var dato = prompt('Ingrese un valor');
+            dato = dato.toLowerCase() //así toma x en mayusc y minusc
+            if (dato == 'x') break;
+            contador++;
+            document.write('nota ' + contador + ' fue ' + dato + '<br>')
+            dato = Number(dato);
+            notasAcumuladas += dato;
+            console.log('nota actual: ' + dato + ' suma: ' + notasAcumuladas + ' cantidad de notas: ' + contador)
+        }
+        while (true) //puede ser también (dato != x) y se puede evitar el else.
+        var promedio = notasAcumuladas / contador
+        alert('fin del programa. El promedio es ' + promedio)
+        document.write('El promedio total es ' + promedio)
+    </script>
+
+</body>
+
+</html>

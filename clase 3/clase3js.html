@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //funcion para duplicar. Esta funcion no se puede modificar despues:
+        var num = prompt('ingrese un numero')
+
+        function duplicar(n) {
+            return n * 2;
+        }
+
+        var doble = duplicar(num);
+        console.log(doble)
+
+        // cambiar lo que hace una funcion con una variable:
+        var operacion = function(a, b) {
+            return a + b
+        }
+
+        var op = operacion(2, 4)
+        console.log(op)
+
+        operacion = function(a, b) {
+            return a * b
+        }
+        var op = operacion(2, 4)
+        console.log(op)
+    </script>
+
+</body>
+
+</html>
