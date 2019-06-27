@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //fizzbuzz:
+
+        var num = prompt('ingrese un numero');
+        num = Number(num)
+
+        for(var i = num; i > 0; i--) {
+            if ((i %5 == 0) && (i % 3 == 0)) {
+                console.log('Fizz Buzz')
+            } else if (i %5 == 0) {
+                console.log('Buzz')
+            } else if (i %3 == 0) {
+                console.log('Fizz')
+            } else {
+                console.log(i)
+            }
+                        
+        }
+    
+    </script>
+
+</body>
+</html>

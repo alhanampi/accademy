@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-
 <body>
 
 
     <script>
-        //ejercicio 3:
+        //ejercicio 4:
+
 
         var ingresado = prompt('ingrese el número que quiere calcular')
         numeros = []
 
-        for (var i = 1; i <= ingresado; i++) {
+        for (var i = 0; i <= ingresado; i++) {
             i = parseInt(i)
             numeros.push(i)
 
             var total;
-            for (var i = 1, total = 1; i < numeros.length; i++) {
-                total *= numeros[i];
-                var final = prompt('El factorial de ' + numeros + ' es ' + total)
+            for (var i = 0, total = 0; i < numeros.length; i++) {
+                total += numeros[i];
             }
-
+            
         }
+        var final = alert('La secuencia de fibonacci de ' + numeros + ' es ' + total)
+        
     </script>
-
+    
 </body>
-
 </html>
