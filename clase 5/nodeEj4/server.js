@@ -1,6 +1,8 @@
 const http = require('http');
 const app_port = process.env.app_port || 8080;
 
+let contadorVisitas = 0; //para ver cuantas visitas hay
+
 //unir html:
 const getWebPage = () => 
     `<!DOCTYPE html>
@@ -34,7 +36,7 @@ const getWebPage = () =>
     <body>
     
         <h1>Página de prueba para Node</h1>
-        
+        <b> Esta página ha sido visitada ${contadorVisitas} veces </b>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odit rem exercitationem provident laborum at corrupti alias similique, minus nam magnam aliquam vitae perferendis minima soluta, facilis non tempora porro.</p>
 
         <p><i>${new Date().toLocaleString()} </i></p>
@@ -43,11 +45,12 @@ const getWebPage = () =>
     </html>
     `;
 
+
 http.createServer((req, res) => {
     console.log(req.url);
     console.log('llego request frontend')
-    if(req.url == '/mipagina') {
-
+    if(req.url == '/mipagina') { //solamente va a entrar si la dir es localhost:8080/mipagina
+        contadorVisitas++ //cada vez que entre a la página ese contador va a crecer
         res.writeHead(200, { 'Content-Type': 'text/html' })
         res.write(getWebPage()) 
         res.end();
