@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Realizar un programa que saque el promedio de un curso de alumnos. No se conoce la cantidad que tiene, ingresar las notas hasta ingresar el caracter x
+        */
+        /*
+        var numero;
+        do {
+            numero = prompt('Ingrese un numero');
+            if(numero != 'x') {
+                numero = parseInt(numero);
+                alert(numero + '-' + typeof numero);
+            }
+        }
+        while(numero != 'x');
+        alert('fin del programa');
+        */
+
+        /*
+        var numero;
+        var notasAcumuladas = 0;
+        var contador = 0;
+        do {
+            numero = prompt('Ingrese un numero');
+            if(numero == 'x') break;
+            contador++;
+            numero = parseInt(numero);
+            notasAcumuladas += numero;
+            //alert(numero + ' - ' + typeof numero + ' - ' + notasAcumuladas + ' - ' + contador);
+        }
+        while(true);
+        var promedio = notasAcumuladas / contador;
+        alert('fin del programa, el promedio es: ' + promedio + ' cant notas(' + contador + ')');
+        */
+
+        var numero;
+        var notas = [];
+        do {
+            numero = prompt('Ingrese un numero');
+            if(numero == 'x') break;
+            numero = parseInt(numero);
+            notas.push(numero);
+            //alert(notas);
+        }
+        while(true);
+        var notasAcumuladas;
+        for(var i=0, notasAcumuladas=0; i<notas.length; i++){
+            notasAcumuladas += notas[i];
+        }
+        var promedio = notasAcumuladas / notas.length;
+
+        var mensaje =   'fin del programa, notas=[' +
+                        notas +
+                        '] -> el promedio es: ' +
+                        promedio +
+                        ' cant notas (' +
+                        notas.length +
+                        ')';
+        
+        alert(mensaje);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

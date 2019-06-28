@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 1 - JS</title>
+</head>
+
+<body>
+    <!-- https://docs.emmet.io/cheat-sheet/
+
+    ul>li{item$}*5
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+
+    ul>li*3>a>img
+    <ul>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+    </ul>
+    -->
+
+    <h1>Clase 1 JS</h1>
+
+    <script>
+        /*
+        console.log('1');
+        console.log('2');
+        console.log('3');
+        
+        document.write('<h2 style="color:red;">Hola mundo!</h2>');
+
+        //alert('Hola soy el alert');
+        var a = prompt('Ingrese un número');
+        a = Number(a);
+
+        var b = prompt('Ingrese otro número');
+        b = parseInt(b);
+
+        var resultado = a + b;
+        var mensaje = 'el resultado es:';
+        console.log(mensaje + resultado);
+        alert('Los número ingresados son a:'+ a + ' y b:' + b + ' ' + (mensaje + resultado));
+
+        var d;
+        console.log(d);
+
+        var acceso = confirm('desea ingresar?');
+        //alert(acceso);
+        if (acceso) {
+            var edad = prompt('Ingrese su edad');
+            if (edad >= 0 && edad < 5) {
+                alert('Ud. es un bebé');
+            }
+            else if (edad >= 5 && edad < 12) {
+                alert('Ud. es un niño');
+            }
+            else if (edad >= 12 && edad < 19) {
+                alert('Ud. es un adolescente');
+            }
+            else if (edad >= 19 && edad < 120) {
+                alert('Ud. es un adulto');
+                alert('BIENVENIDO!!!!!!');
+                if (edad >= 25) {
+                    var respuesta = confirm('desea un trago??');
+                    if (respuesta) {
+                        alert('Ya se lo traemos');
+                    }
+                    else {
+                        alert('Pidalo cuando guste!');
+                    }
+                }
+            }
+            else {
+                alert('Ud. no es un humano');
+            }
+        }
+        else {
+            alert('Lo esperamos la próxima!!!');
+        }
+        */
+
+        var fecha = new Date();
+        document.write(fecha + '<br>');
+
+        var numeroDeDia = fecha.getDay();
+        document.write('El día de la semana es ' + numeroDeDia + '<br>');
+
+        var dia = '';
+        switch (numeroDeDia) {
+            case 0:
+                dia = 'Domingo';
+                break;
+            case 1:
+                dia = 'Lunes';
+                break;
+            case 2:
+                dia = 'Martes';
+                break;
+            case 3:
+                dia = 'Miercoles';
+                break;
+            case 4:
+                dia = 'Jueves';
+                break;
+            case 5:
+                dia = 'Viernes';
+                break;
+            case 6:
+                dia = 'Sabado';
+                break;
+            default:
+                dia = 'ERROR!! dia desconocido';
+        }
+        document.write('hoy es ' + dia);
+
+
+
+    </script>
+
+</body>
+
+</html>
