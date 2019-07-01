@@ -12,21 +12,22 @@
 
     <script>
     
-    let numero = prompt('ingrese un número')
- //   let primo = true;
-
-    for (var i = 0; i < numero; i++) {
-        if (numero % i == 0) { 
-        //(numero/i == Math.round(numero/i) && i!= 1 && i!= numero) {
-   //         primo = false;
-            console.log('no es primo');
-            break;
-        } else{ 
-            primo = true;
-            console.log('es primo')
-        }
-
-    }
+    var num=parseInt(prompt('Introduzca un numero', ''));
+if (num == 1 || num == 2) {
+alert('El numero ' +num+ ' es primo'); 
+}else{
+for (var i=2;i<num;i++) {
+if(num % i == 0) {
+alert('El numero ' +num+ ' no es primo'); 
+break;
+}else{
+alert('El numero ' +num+ ' es primo'); 
+break;
+}
+}
+ 
+ 
+}
         
         
     </script>
