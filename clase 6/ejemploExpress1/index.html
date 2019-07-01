@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="/datos" method="post"> 
+   <!-- <form action="https://postman-echo.com/post" method="post">    el metodo tiene que coincidir con el que aparezca en la url -->
+        <!-- <form action="/datos" method="get"> -->
+
+        Nombre: <br>
+        <input type="text" name="nombre"> <br>
+        <!-- si no tiene name, no va a aparecer la data. No aparece en el backend sin ella-->
+        Apellido: <br>
+        <input type="text" name="apellido"> <br>
+        Edad: <br>
+        <input type="number" name="edad"> <br>
+        <br><br>
+        <input type="submit" value="Enviar POST">
+
+    </form>
+    <br><br>
+    <form action="/datos" method="get"> 
+        <!-- <form action="https://postman-echo.com/post" method="post">    el metodo tiene que coincidir con el que aparezca en la url -->
+             <!-- <form action="/datos" method="get"> -->
+     
+             Nombre: <br>
+             <input type="text" name="nombre"> <br>
+             <!-- si no tiene name, no va a aparecer la data. No aparece en el backend sin ella-->
+             Apellido: <br>
+             <input type="text" name="apellido"> <br>
+             Edad: <br>
+             <input type="number" name="edad"> <br>
+             <br><br>
+             <input type="submit" value="Enviar GET">
+     
+         </form>
+
+</body>
+
+</html>
