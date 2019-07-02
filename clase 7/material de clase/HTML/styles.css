@@ -1,0 +1,114 @@
+@import:url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body, header, nav, .menu, main, section, footer{
+	margin:0;
+	padding:0;
+	border:0;
+	color:white;
+	background-color: rgba(200,50,120,0.5);
+	font-family: tahoma, sans-serif;
+}
+
+nav, footer{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu li:hover, .active{
+	background-color: darkviolet;
+}
+
+header{
+	overflow:hidden;
+	padding:5px;
+	background-image: url('img/bg.jpg')
+}
+
+header div h1{
+	padding:0;
+}
+
+.header{
+	float:left;
+	margin: 0  2% 0 5%;
+	width:40%;
+
+}
+
+.socialnetwork{
+	float:right;
+	width: 40%;
+	text-align: right;
+	margin-right: 5%;
+
+}
+
+main,section{
+	padding:2%;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+section{
+	border-radius: 15px 0 15px 0;
+}
+
+.form{
+	background-color: darkviolet;
+	margin: auto;
+	width: 300px;
+	text-align:right;
+	padding:20px 60px 30px 0;
+}
+
+input, select, textarea{
+	width:200px;	
+	padding:2px 0 2px 0;
+	margin-bottom: 4px;
+	border:0;
+	resize: none;
+	vertical-align: top;
+}
+
+.form textarea{
+	height:50px;
+}
+
+input.boton{
+	margin-top: -4px;
+	margin-right: 5px;
+	color: darkgreen;
+	background-color: lightgreen;
+}
+
+.contacto *{
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px black;
+}
+
+.contacto{
+	background-color: darkviolet;
+	margin: auto;
+	width: 300px;
+	text-align:center;
+	padding:20px 0 30px 0;
+}
+
+input{
+	outline: none;
+}
+
+.circle{
+	width: 30px;
+	color:white;
+	background-color: darkblue;
+	margin-left: -35px;
+}

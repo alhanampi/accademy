@@ -1,0 +1,66 @@
+/*Modificacion y eliminacion de registros del estilo predeterminado*/
+	body, header, h1, nav, ul.menu, ul.menu li, main, footer {
+		margin:0;
+		padding:0;
+		border:0;
+		font-family: 'century gothic', sans-serif;
+	}
+
+		body{
+			background: linear-gradient(100deg, #53bbbf 10%, #0f1939 90%);
+			color: white;
+			text-align: center;
+		}
+
+		h1{
+			text-shadow: 5px 5px 10px black;
+		}
+		
+	/*Barra de Navegacion*/
+	nav, footer{
+		background-color:rgba(25,33,104,0.5);
+		color:white;
+		text-align:center;		
+	}
+
+		/*Menu de Opciones*/
+		ul.menu li {
+			display: inline;
+			padding: 0px 5px 0px 5px;
+		}
+
+		/*Cambio cuando se pasa el mouse sobre el menu*/
+		ul.menu li:hover{
+			background-color: rgba(125, 133, 204, 0.5);
+			font-size: 18px;
+		}
+
+		/*Estilo del menu seleccionado*/
+		li.active{
+			background-color: rgba(125, 133, 204, 0.5);
+			font-size: 18px;	
+		}
+
+	/*Formato de la seccion Principal del Body*/
+	main{
+		padding:20px;
+		text-align: left;
+	}
+
+	/*Eliminacion del Formato predeterminado de los hipervinculos*/
+	a{
+		text-decoration: none;
+		color: white;
+	}
+
+	iframe{
+		border: 0;
+		height: 0;
+	}
+
+	a.contract:hover iframe{
+		color: white;
+		width: 500px;
+		height:300px;
+		float: right;
+	}

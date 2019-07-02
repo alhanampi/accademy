@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>FORMULARIOS</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<img src="img/logo.png" alt="Inserte Logo">
+			<h1>HTML5 &amp; CSS3</h1>
+		</div>
+		<div class="socialnetwork">
+			<a href="https://es-la.facebook.com" target="_blank">facebook</a>
+			<a href="https://twitter.com" target="_blank">twitter</a>
+			<a href="http://www.youtube.com" target="_blank">youtube</a>
+		</div>
+	</header>
+	<nav>
+		<ul class="menu">
+			<li class="active"><a href="index.html">inicio</a></li>
+			<li><a href="productos.html">productos</a></li>
+			<li><a href="servicios.html">servicios</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h1>Titulo</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolorum, iure cupiditate labore obcaecati cum laborum consectetur deserunt animi est itaque ipsum corrupti modi dicta nemo maiores incidunt? Vitae, ratione.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptate dolores deleniti nesciunt sequi eaque soluta impedit, temporibus, ratione ipsum perspiciatis, reiciendis sint possimus aut tempore itaque. Delectus, dolor, et.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus provident eum ullam nam labore, quidem deserunt, vitae exercitationem! Tempore, labore? Quam vero necessitatibus doloremque, amet ut, eligendi laudantium assumenda deserunt!</p>
+		</section>
+		<section>
+			<form class="form" action="contacto.php" method="POST">
+				<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre"/>
+					<br/>
+				<label for="email">Correo: </label>
+					<input type="email" name="email"/>
+					<br/>
+				<label for="consulta">Consulta: </label>
+					<textarea name="consulta"></textarea>
+					<br/>
+				<input class="boton" type="submit"/>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; Todos los derechos reservados | Cristian Racedo &amp; compañia</p>
+	</footer>
+</body>
+</html>

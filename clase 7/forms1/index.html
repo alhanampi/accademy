@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>forms</title>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <img src="/img/logo.png" alt="logo">
+            <h1>Forms HTML &amp CSS</h1>
+        </div>
+        <div class="socialnetwork">
+            <a href="https://facebook.com" target="_blank" class="icon fa fa-facebook"> </a>
+            <a href="https://twitter.com" target="_blank" class="icon fa fa-twitter"></a>
+            <a href="http://youtube.com" target="_blank" class="icon fa fa-youtube"></a>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Titulo</h1>
+            <p>Cat ipsum dolor sit amet, cats making all the muffins. Give me some of your food give me some of your food give me some of your food meh, i don't want it stare at ceiling light or sleep everywhere, but not in my bed. Meow in empty rooms scratch the furniture get scared by sudden appearance of cucumber yet cat not kitten around cough furball. 
+            </p>
+        </section>
+
+        <section>
+            <form action="contacto.php" method="post" class="form">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="nombre" required> 
+                <br>
+                <label for="email">Email: </label>
+                <input type="text" name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <br>
+                <label for="consulta">Consulta: </label>
+                <textarea name="consulta" placeholder="consulta" required></textarea>
+                <br>
+                <input type="submit" class="boton">
+    
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy Todos los derechos Reservados | Pam.</p>
+
+    </footer>
+
+    
+    
+</body>
+</html>

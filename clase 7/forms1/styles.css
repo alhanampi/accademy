@@ -1,0 +1,189 @@
+body, header, h1, nav, .menu, main, section, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: rgb(51, 45, 45);
+    background-color: rgba(124, 160, 189, 0.5);
+    font-family: tahoma, sans-serif;
+}
+
+nav, footer {
+    text-align: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(75, 70, 70);
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.active a {
+    color: aliceblue;
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+.menu li:hover, .active {
+    background-color: rgb(106, 136, 161);
+}
+
+header {
+    overflow: hidden;
+    padding: 5px;
+    background-image: url('./img/bg.jpg');
+}
+
+header .h1 {
+    padding: 0;
+}
+
+.header {
+    float: left;
+    margin: 0 2% 0 6%;
+    width: 40%;
+}
+
+.socialnetwork {
+    float: right;
+    width: 40%;
+    text-align: right;
+    margin-right: 5%;
+}
+
+main, section {
+    padding: 2%;
+    text-align: justify;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+section {
+    border-radius: 15px 0 15px 0;
+}
+
+.form {
+    background-color: rgb(69, 92, 110);
+    margin: auto;
+    width: 300px;
+    text-align: right;
+    padding: 8px;
+    color: white;
+}
+
+.form input, .form select, .form textarea {
+    width: 200px;
+    margin: 0;
+    margin-bottom: 8px;
+/*    margin-top: 5px;*/
+    padding: 3px;
+    border: 0px;
+    resize: none; /*para que la cajita no resizee*/
+    vertical-align: top;
+}
+
+
+.form input:hover, .form select:hover, .form textarea:hover {
+    background-color: rgb(224, 235, 245);
+    cursor: pointer;
+}
+
+.form .boton {
+    width: 60px;
+    background-color: rgb(91, 117, 138);
+    color: aliceblue;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.form .boton:hover {
+    background-color: rgb(30, 40, 49);
+}
+
+ul li {
+    padding: 10px;
+}
+
+input {
+    outline: none;
+}
+
+.prodform {
+    background-color: rgb(69, 92, 110);
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.prodform * {
+    width: 200px;
+    margin: 0;
+    margin-bottom: 8px;
+    border: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    resize: none; /*para que la cajita no resizee*/
+    vertical-align: top;
+    border-radius: 5px; 
+}
+
+.prodform .boton {
+    width: 60px;
+    background-color: rgb(91, 117, 138);
+    color: aliceblue;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.prodform .boton {
+    width: 60px;
+    background-color: rgb(91, 117, 138);
+    color: aliceblue;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+
+.pass {
+    background-color: rgb(69, 92, 110);
+    margin: auto;
+    width: 300px;
+    text-align: left;
+    padding: 8px;
+    color: white;
+}
+
+.pass input, .pass select, .pass textarea {
+    width: 200px;
+    margin: 3px;
+    margin-bottom: 8px;
+    padding: 3px;
+    border: 0px;
+    resize: none; 
+    vertical-align: top;
+}
+
+.pass input:hover, .pass select:hover, .pass textarea:hover {
+    background-color: rgb(224, 235, 245);
+    cursor: pointer;  
+}
+
+.pass .circle {
+    width: 30px;
+    background-color: rgb(107, 135, 158);
+    color: aliceblue;
+    margin-left: -35px;
+}
+
+.icon {
+    font-size: 30px;
+    color: aliceblue;
+    padding: 10px;
+}

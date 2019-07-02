@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>FORMULARIOS</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<img src="img/logo.png" alt="Inserte Logo">
+			<h1>HTML5 &amp; CSS3</h1>
+		</div>
+		<div class="socialnetwork">
+			<a class="fa fa-facebook" href="https://es-la.facebook.com" target="_blank"></a>
+			<a class="fa fa-twitter" href="https://twitter.com" target="_blank"></a>
+			<a class="fa fa-youtube" href="http://www.youtube.com" target="_blank"></a>
+		</div>
+	</header>
+	<nav>
+		<ul class="menu">
+			<li><a href="index.html">inicio</a></li>
+			<li class="active"><a href="productos.html">productos</a></li>
+			<li><a href="servicios.html">servicios</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h1>Titulo</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolorum, iure cupiditate labore obcaecati cum laborum consectetur deserunt animi est itaque ipsum corrupti modi dicta nemo maiores incidunt? Vitae, ratione.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptate dolores deleniti nesciunt sequi eaque soluta impedit, temporibus, ratione ipsum perspiciatis, reiciendis sint possimus aut tempore itaque. Delectus, dolor, et.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus provident eum ullam nam labore, quidem deserunt, vitae exercitationem! Tempore, labore? Quam vero necessitatibus doloremque, amet ut, eligendi laudantium assumenda deserunt!</p>
+		</section>
+		<section>
+			<form class="contacto" action="contacto.php" method="POST">
+				<input type="text" name="nombre" placeholder="Nombre" required/>
+					<br/>
+				<input type="email" name="email" placeholder="correo@servidor" required />
+					<br/>
+				<select name="region">
+					<option value="A1">Africa</option>
+					<option value="A2" selected>America</option>
+					<option value="A3">Asia</option>
+					<option value="E1">Europa</option>
+					<option value="O1">Oceania</option>
+				</select>
+					<br>
+				<textarea name="consulta" required></textarea>
+					<br/>
+				<input class="boton" type="submit"/>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; Todos los derechos reservados | Cristian Racedo &amp; compañia</p>
+	</footer>
+</body>
+</html>
