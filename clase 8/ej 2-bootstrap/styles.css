@@ -1,0 +1,148 @@
+/*generales*/
+
+.menu {
+    padding: 0;
+}
+
+/*SX*/
+
+
+@media (max-width:480px) {
+    body {
+        background: linear-gradient(45deg, rgb(184, 216, 226), rgb(188, 227, 236));
+    }
+
+    body * {
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: lightslategray;
+    }
+
+	header{
+        display: flex;
+        flex-direction: column;
+		padding: 1rem;
+		color:white;
+    }
+    
+    .menu {
+        display:flex;
+		flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 0.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(90, 111, 116)
+    }
+
+    #galeria {
+      text-align: center;
+    }
+
+    #galeria img {
+        width: 250px;
+    }
+
+    #galeria p {
+        width: 250px;
+        font-size: 1rem; 
+        margin: auto;
+		text-align: left;
+		padding:0.5rem;
+    }
+
+    #contacto {
+        max-width: 250px;
+    }
+
+    #servicios ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 2rem 1rem 1rem 1rem;
+        min-width: 200px;
+		margin:auto;
+    }
+
+    #servicios ul li {
+        display: flex;
+        flex-direction: row;        
+    }
+
+    #servicios img {
+        width: 120px;
+        margin-right: 0.5rem;
+        float: left;
+        border: 1px solid rgb(54, 50, 50);
+    }
+
+    #servicios figcaption{
+		color:rgb(54, 50, 50);
+	}
+
+	#servicios figcaption::before{
+		content: 'mi descripcion';
+    }
+    
+    #footer, footer form {
+        display: flex;
+        flex-direction: column;
+        resize: none;
+    }
+	footer form{
+		padding:0.5rem 1rem 0.5rem 1rem;
+    }
+    
+    #footer p{
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    input, textarea {
+        margin-top: 0.3rem;
+        border: solid 1px rgb(130, 160, 161);
+    }
+
+    #redes {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+/*M*/
+
+@media (min-width:481px),(max-width:720px){
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+    }	
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        background: linear-gradient(45deg, rgb(184, 216, 226), rgb(188, 227, 236));
+    }
+    .menu {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+}
+
+
+
+/*L*/
+
+
+/*XL*/

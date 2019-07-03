@@ -1,0 +1,41 @@
+img {
+    width: 300px;
+    margin: auto;
+    border: 5px solid white;
+}
+
+#girar:hover {
+    transform: rotate(90deg);
+    transition-delay: 200ms; /*cuanto tarda en ejecutarse*/
+    transition-duration: 1s; /*cuanto dura*/
+}
+
+#distorsionar:hover {
+    transform: skewX(150deg);
+    transition-delay: 200ms;
+    transition-duration: 3000ms;
+}
+
+ul li:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.rotacion, .desplaza{
+    width: 500px;
+    position: absolute;
+}
+
+#animacion:active .desplaza{
+    color:white;
+    transition-duration: 1s;
+
+    transform: translate(600px);
+}
+
+#animacion:active .rotacion{
+    transform: rotate(180deg);
+    transition-duration: 1s;
+
+}
+

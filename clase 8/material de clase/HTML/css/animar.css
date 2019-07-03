@@ -1,0 +1,44 @@
+/*HOJA DE ESTILO DE ANIMACIONES*/
+img {
+	width:300px;
+	margin:auto;
+	border:5px solid white;
+}
+
+#girar:hover{
+	transform: rotate(90deg);
+	transition-delay: 0.5s;
+	transition-duration: 3s; 
+}
+
+#distorcionar:hover{
+	transform: skewy(150deg);
+	transition-delay: 500ms;
+	transition-duration: 3s;
+
+}
+
+.menu li:hover{
+	transform: scale(1.5);
+	transition-duration: 1s;
+	transition-delay: 0.5s;
+}
+
+.desplazamiento, .rotacion{
+	width: 500px;
+	position: absolute;
+}
+
+#animacion:active .desplazamiento{
+		color:white;
+		transition-duration: 1s;
+		transition-delay: 0.2;
+		transform: translate(600px);
+}
+
+#animacion:active .rotacion{
+		transform: rotate(180deg);
+		transition-duration: 1s;
+		transition-delay: 0.3;
+}
+

@@ -1,0 +1,94 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+@font-face {
+	src:url('../fonts/ruas.otf'); 
+	src:url('../fonts/ruas.ttf');
+	font-family:Ruas;
+}
+
+body{
+	background-image:url('../img/bg-body.jpg');
+	color:#def;
+	font-family:Ruas;
+}
+
+header{
+	background-color: rgba(25,43,168,0.5);
+	padding:2.5%;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	text-shadow: 2px 2px 5px darkblue;
+}
+
+header h1 {
+	font-size:60px;
+	font-weight: bolder;
+}
+
+.menu{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+	padding:0;
+	width:300px;
+	font-size: 38px;
+}
+
+a{
+	color:#def;
+	text-decoration:none;
+}
+
+.menu li{
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px black;
+	padding:2% 5% 2% 5%;
+	background:linear-gradient(rgba(50,86,250,0.8),rgba(10,32,100,0.8));
+}
+
+.menu li:hover{
+	background: linear-gradient(rgba(180, 230, 255, 0.8),rgba(120, 180, 220, 0.8))
+}
+
+footer form{
+	margin: auto;
+	padding: 5%;
+	/*establecemos los ANCHOS
+	MINIMO y MAXIMO del elemento*/
+		min-width:200px;
+		max-width: 600px;
+	display: flex;
+	text-align: center;
+	flex-direction:column;
+}
+	input, select, textarea{
+		min-width:150px; 
+		max-width:600px;
+		outline-style:none;
+		box-sizing: border-box;
+		padding:5px;
+	}
+
+	textarea{
+		resize: none;
+		height:100px;
+	}
+
+	.validar{
+		border-style: none;
+		background: linear-gradient(-10deg,lightgrey, darkgrey);
+	}
+
+	.validar:hover{
+		color:white;
+		background: linear-gradient(10deg,lightblue,darkblue);
+		border-style: none;
+	}
+
+footer p{
+	text-align:center;
+	background-color: rgba(25,43,168,0.5);
+	padding: 5%;
+}

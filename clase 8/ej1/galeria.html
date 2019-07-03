@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|Noto+Sans+SC|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animar.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Clase 8 - HTML &amp; CSS</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <svg>
+                    <rect x="10" y="20" width="100" height="200" />
+                    <circle cx="250" cy="50" r="30" fill="black" />
+                    <line x1="0" y1="0" x2="100" y2="100" stroke="white"/>
+					<line x1="0" y1="100" x2="100" y2="0" stroke="white"/>
+                </svg>
+            </section>
+
+            <section>
+                <img src="img/bg-header.jpg" alt="" id="girar">
+                <img src="img/bg-body.jpg" alt=""id="distorsionar">
+   
+            </section>
+            <section id="animacion">
+                <img src="img/bg-header.jpg" alt="" class="rotacion">
+                <p class="desplaza">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla corrupti id harum unde saepe qui reiciendis ratione sit in debitis, nobis deleniti nisi nihil reprehenderit ipsam laboriosam repellendus pariatur?
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <form action="" method="post">
+            <input type="text" name="nombre" placeholder="nombre*" required>
+            <input type="text" name="email" placeholder="email*" required>
+            <textarea name="consulta" placeholder="consulta*" required></textarea>
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+
+        <p>&copy; Pam 2019 - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

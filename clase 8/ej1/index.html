@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|Noto+Sans+SC|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Clase 8 - HTML &amp; CSS</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <section>
+                <table class="semanario">
+                    <thead>
+                        <th>/</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Mañana</th>
+                            <td>HTML</td>
+                            <td>HTML</td>
+                            <td>CSS</td>
+                            <td>ANGULAR</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Tarde</th>
+                            <td></td>
+                            <td>HTML</td>
+                            <td>Bootstrap</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Noche</th>
+                            <td></td>
+                            <td></td>
+                            <td>CCNA</td>
+                            <td>CCNA</td>
+                            <td>CCNA</td>
+                            <td>CCNA</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th>Total</th>
+                        <td colspan="6">10</td>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section>
+                <table class="discografia">
+                    <caption>Discografía</caption>
+                    <thead>
+                        <th>Portada</th>
+                        <th>Canción</th>
+                        <th>Duración</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3"><img src="img/table-img-pj.jpg" alt="portada"></td>
+                            <td>Even Flow</td>
+                            <td>5:10 min</td>
+                        </tr>
+                        <tr>
+                            <td>Black</td>
+                            <td>5:40 min</td>
+                        </tr>
+                        <tr>
+                            <td>Wish List</td>
+                            <td>3:26 min</td>
+                        </tr>
+                        <tr>
+                                <td rowspan="3"><img src="img/table-img-rchp.jpg" alt="portada" rowspan="3"></td>
+                                <td>Can't Stop</td>
+                                <td>4:38 min</td>
+                            </tr>
+                            <tr>
+                                <td>Californication</td>
+                                <td>5:22 min</td>
+                            </tr>
+                            <tr>
+                                <td>By the Way</td>
+                                <td>3:38 min</td>
+                            </tr>
+                    </tbody>
+                </table>    
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <form action="" method="post">
+            <input type="text" name="nombre" placeholder="nombre*" required>
+            <input type="text" name="email" placeholder="email*" required>
+            <textarea name="consulta" placeholder="consulta*" required></textarea>
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+ 
+        <p>&copy; Pam 2019 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

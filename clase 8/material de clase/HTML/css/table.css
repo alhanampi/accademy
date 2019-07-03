@@ -1,0 +1,32 @@
+/*HOJA DE ESTILO DE TABLA*/
+@font-face{
+	src:url('../fonts/supernova.ttf');
+	font-family:super;
+}
+
+table{
+	font-family:super;
+	box-sizing: border-box;
+}
+
+.semanario, .semanario tr, .semanario td {
+	background-color: rgba(25,100,180,0.5);
+}
+
+.semanario td{
+	width:80px;
+}
+
+.musica, .musica tr, .musica td{
+	column-span: none;
+	border-collapse: collapse;
+	border: 2px dotted white;
+}
+
+.musica td {
+	width: 100px;
+}
+
+.musica img{
+	width:200px;
+}
