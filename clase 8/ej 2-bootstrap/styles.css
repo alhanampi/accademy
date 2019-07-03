@@ -1,148 +1,230 @@
 /*generales*/
 
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(184, 216, 226), rgb(106, 150, 160));
+}
+
 .menu {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(90, 111, 116)
+}
+
+aside {
+    visibility: none;
+}
+
+.menu li {
+    padding: 0.5rem;
+}
+
+#footer,
+footer form {
+    display: flex;
+    flex-direction: column;
+    resize: none;
+}
+
+footer form {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+#contacto {
+    width: 100%;
+    margin: auto
+}
+
+#galeria {
+    text-align: center;
+}
+
+#footer p {
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+#servicios ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem 1rem 1rem 1rem;
+    min-width: 200px;
+    margin: auto;
+}
+
+input,
+textarea {
+    margin-top: 0.3rem;
+    border: solid 1px rgb(130, 160, 161);
+}
+
+#redes {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
 /*SX*/
 
-
 @media (max-width:480px) {
-    body {
-        background: linear-gradient(45deg, rgb(184, 216, 226), rgb(188, 227, 236));
-    }
-
-    body * {
-        box-sizing: border-box;
-    }
-
     h1 {
         font-size: 2rem;
         color: lightslategray;
+        text-align: center;
     }
-
-	header{
+    header {
         display: flex;
         flex-direction: column;
-		padding: 1rem;
-		color:white;
+        padding: 1rem;
+        color: white;
     }
-    
     .menu {
-        display:flex;
-		flex-direction: row;
+        display: flex;
+        flex-direction: row;
         justify-content: space-around;
         list-style: none;
         padding: 0;
         margin: 0;
         border-radius: 0.5rem;
     }
-
-    a {
-        text-decoration: none;
-        color: rgb(90, 111, 116)
-    }
-
     #galeria {
-      text-align: center;
+        padding: 1rem;
     }
-
     #galeria img {
-        width: 250px;
-    }
-
-    #galeria p {
-        width: 250px;
-        font-size: 1rem; 
-        margin: auto;
-		text-align: left;
-		padding:0.5rem;
-    }
-
-    #contacto {
         max-width: 250px;
     }
-
+    #galeria p {
+        width: 250px;
+        font-size: 1rem;
+        margin: auto;
+        text-align: left;
+        padding: 0.5rem;
+    }
+    #servicios ul li {
+        display: flex;
+        flex-direction: row;
+    }
+    #servicios img {
+        width: 120px;
+        margin-right: 0.5rem;
+        margin-left: 10%;
+        float: left;
+        border: 1px solid rgb(54, 50, 50);
+    }
+    #servicios figcaption {
+        color: rgb(54, 50, 50);
+    }
+    #servicios figcaption::before {
+        content: 'mi descripcion';
+    }
+    #servicios {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+    }
     #servicios ul {
         list-style: none;
         display: flex;
         flex-direction: column;
-        color: white;
         padding: 2rem 1rem 1rem 1rem;
+    }
+    #servicio li {
         min-width: 200px;
-		margin:auto;
-    }
-
-    #servicios ul li {
-        display: flex;
-        flex-direction: row;        
-    }
-
-    #servicios img {
-        width: 120px;
-        margin-right: 0.5rem;
-        float: left;
-        border: 1px solid rgb(54, 50, 50);
-    }
-
-    #servicios figcaption{
-		color:rgb(54, 50, 50);
-	}
-
-	#servicios figcaption::before{
-		content: 'mi descripcion';
-    }
-    
-    #footer, footer form {
-        display: flex;
-        flex-direction: column;
-        resize: none;
-    }
-	footer form{
-		padding:0.5rem 1rem 0.5rem 1rem;
-    }
-    
-    #footer p{
-        text-align: center;
-        font-size: 0.5rem;
-    }
-
-    input, textarea {
-        margin-top: 0.3rem;
-        border: solid 1px rgb(130, 160, 161);
-    }
-
-    #redes {
-        text-align: center;
-        font-size: 2rem;
+        max-width: 300px;
+        padding: 2rem 12.5% 12.5% 1rem;
+        margin: auto;
     }
 }
 
+
 /*M*/
 
-@media (min-width:481px),(max-width:720px){
-	header{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-    }	
-    nav ul {
+@media (min-width:481px),
+(max-width:720px) {
+    header {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
+        color: lightgrey;
+        padding: 1rem;
     }
-    body {
-        background: linear-gradient(45deg, rgb(184, 216, 226), rgb(188, 227, 236));
+    h1 {
+        padding: 2rem 0 1rem 0;
+        font-size: 3.5rem;
+        color: aliceblue
     }
     .menu {
         list-style: none;
         padding: 0;
         display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+        border-radius: 5px;
+        text-align: center;
+    }
+    #galeria {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+    #galeria img {
+        min-width: 300px;
+        max-width: 500px;
+        border: 1px solid white;
+        margin-right: 0.5rem;
+    }
+    #servicios ul {
+        background-color: white;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #servicios li {
+        width: 30%;
+    }
+    #servicios figure {
+        display: flex;
+        flex-direction: row;
+        color: rgb(87, 87, 87);
+        overflow: hidden;
+        /*L*/
+    }
+    #servicios img {
+        min-width: 50px;
+        max-width: 150px;
+    }
+    #footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer form {
+        margin: auto;
+        min-width: 400px;
+        max-width: 600px;
+        padding: 2rem;
+    }
+    .fa {
+        color: rgb(70, 69, 69);
+    }
+    .fa:hover {
+        color: rgb(15, 15, 29)
     }
 }
 
-
-
-/*L*/
+@media (min-width:721px),
+(max-width:1200px) {}
 
 
 /*XL*/
+
+@media (min-width:1201px) {}

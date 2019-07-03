@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>BootStrap</title>
+	<!-- FONT AWESOME - para los iconos de Fuente -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- BOOTSTRAP - para las diferentes medidas -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Mi Hoja de estilos personalizada -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" alt="logo">
+		<h1>Titulo</h1>
+		<nav>
+			<ul class="menu input-group">
+				<li><a href="index.html">inicio</a></li>
+				<li><a href="galeria.html">galeria</a></li>
+				<li><a href="#">acerca de</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="galeria">
+			<img src="img/imagen.jpg" alt="una imagen">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, tenetur sapiente repellendus esse expedita natus ipsa repellat, ex aspernatur. Similique cum possimus sint unde esse delectus quidem, nostrum voluptatem reiciendis.</p>	
+		</section>
+		<section id="servicios">
+			<ul>
+				<li>
+					<figure>
+						<img class="col-6" src="" alt="imagen">
+						<figcaption> descripcion</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img class="col-6" src="" alt="imagen">
+						<figcaption> descripcion</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img class="col-6" src="" alt="imagen">
+						<figcaption> descripcion</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer id="footer">
+		<form class="input-group" id="contacto" action="">
+			<input type="text" placeholder="Ingrese su nombre" name="nombre" required>
+			<input type="email" placeholder="micorreo@gmail.com" name="correo" required>
+			<textarea name="consulta"></textarea>
+			<input class="btn btn-outline-primary" type="submit" value="Consultar">
+		</form>
+		<div id="redes">
+			<a class="fa fa-facebook" href="https://www.facebook.com"></a>
+			<a class="fa fa-twitter" href="https://www.twitter.es"></a>
+			<a class="fa fa-youtube" href="https://www.youtube.com"></a>
+			<a class="fa fa-whatsapp" href="tel:+5411111111"></a>
+		</div>
+		<p>&copy; Derechos Reservados
+		<br> Cristian Racedo &amp; compañia</p>
+	</footer>
+</body>
+</html>

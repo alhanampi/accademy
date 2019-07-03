@@ -1,0 +1,237 @@
+/*Todos los derechos reservados*/
+/*REGLAS GENERALES*/
+	body *{
+		box-sizing: border-box;
+	}
+	.menu{
+		padding:0;
+	}
+	.menu li{
+		padding:0.5rem;
+	}
+	aside{
+		visibility: none;
+	}
+
+/*Celulares - XS (ExtraSmall) */
+@media (max-width:480px){
+	body{
+		background: linear-gradient(-45deg,#3df,#1bc);
+	}
+
+	body *{
+		box-sizing: border-box;
+	}
+	
+	header{
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		color:white;
+	}
+
+	h1{
+		font-size:5rem;
+		text-align: center;
+	}
+	
+	.menu{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+		list-style: none;
+		padding:0;
+		border-radius: 0.5rem;
+	}
+	#galeria{
+		background-color: white;
+		text-align: center;
+	}
+	#galeria img {
+		width: 250px;
+	}
+	#galeria p{
+		width: 250px;
+		font-size: 1rem;
+		margin: auto;
+		text-align: left;
+		padding:0.5rem;
+	}
+
+	#servicios ul{
+		color:white;
+		background-color: darkblue;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		padding: 2rem 1rem 1rem 1rem;
+	}
+
+	#servicio li{
+		min-width: 200px;
+		max-width: 300px;
+		padding: 2rem 12.5% 12.5% 1rem;
+		margin:auto;
+	}
+	
+	#servicios img{
+		float:left;
+		width:120px;
+		border:1px solid lightgrey;
+		margin-right: 0.5rem;
+		margin-left:10%;
+	}
+
+	#servicios figcaption{
+		color:lightgrey;
+	}
+	
+	#footer, footer form{
+		display: flex;
+		flex-direction: column;
+		resize: none;
+	}
+
+	footer form{
+		padding:0.5rem 1rem 0.5rem 1rem;
+	}
+
+	#footer p{
+		text-align: center;
+		color: white;
+		background-color: darkblue;
+	}
+
+	#redes{
+		text-align: center
+	}
+
+	a{ 
+		text-decoration: none;
+	}
+}
+
+/*Tablets - S (Small)*/
+@media (min-width:480px) and (max-width:720px){
+	body{
+		background-color: lightblue;
+	}
+
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		color: lightgrey;
+		background-color: darkblue;
+		padding:1rem;
+	}	
+
+	h1{
+		padding: 2rem 0 1rem 0;
+		font-size: 3.5rem;
+	}
+
+	.menu{
+		list-style: none;
+		padding:0;
+		display: flex;
+		flex-direction:column;
+		color: darkblue;
+		background-color:lightgrey;
+		border-radius: 5px; 
+		text-align: center;
+	}
+	
+	#galeria{
+		display: flex;
+		flex-direction:row;
+		padding:1rem;
+		color:darkblue;
+	}
+	#galeria img{
+		min-width: 300px;
+		max-width: 500px;
+		border: 1px solid white;
+		margin-right: 0.5rem;
+	}
+
+	#servicios ul{
+		color: darkblue;
+		background-color: white;
+		display: flex;
+		list-style: none;
+		padding:0;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	#servicios li{
+		width: 30%;
+		background-color: rgba(200,200,255,0.5);
+	}
+	#servicios figure{
+		display: flex;
+		flex-direction: row;
+		overflow: hidden;
+	}
+
+	#servicios img{
+		min-width: 30px;
+		max-width: 100px;
+		border: 1px solid darkblue;
+	}
+
+	#footer, footer form{
+		color: lightgrey;
+		background-color: darkblue;
+		display: flex;
+		flex-direction: column
+	}
+
+	footer form{
+		margin: auto;
+		min-width:400;
+		max-width:600px;
+		padding:2rem;
+	}
+
+	footer p, #redes{
+		padding-left: 2rem;
+		color: darkblue;
+		background-color:lightblue;
+	}
+
+	#redes{
+		font-size: 3rem;
+	}
+
+	a, a:hover{
+		text-decoration:none;
+	}
+
+	.fa-facebook:hover{
+		color:white;
+	}
+
+	.fa-twitter:hover{
+		color: white;
+	}
+
+	.fa-youtube:hover{
+		color:darkred;
+	}
+
+	.fa-whatsapp:hover{
+		color:limegreen;
+	}
+}
+
+/*Computadoras - M (Medium)*/
+@media (min-width: 720) and (max-width: 1200){
+	
+}
+
+/*Televisores - L (Large)*/
+@media (min-width: 1200){
+
+}
