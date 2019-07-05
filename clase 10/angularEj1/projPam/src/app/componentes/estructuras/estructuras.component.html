@@ -1,0 +1,99 @@
+<div class="jumbotron">
+    <hr>
+    <h2>Componente Estructuras</h2>
+    <hr>
+    <h3>Directiva *ngIf:</h3>
+    <button class="btn btn-success my-3" (click)="mostrar=!mostrar">{{ mostrar ? 'Ocultar': 'Mostrar' }}</button>
+    <p *ngIf="mostrar">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, commodi in. Dolorum cum possimus incidunt,
+        dignissimos exercitationem vel eius necessitatibus magnam corporis repudiandae dolore laboriosam ipsa reiciendis
+        quae reprehenderit suscipit.</p>
+
+    <hr>
+    <h3>Directiva *ngFor:</h3>
+    <ul>
+        <li *ngFor="let usuario of usuarios; index as i">
+            {{ usuario }} {{ i }}
+        </li>
+    </ul>
+
+    <div class="jumbotron jumbo2">
+
+    
+    <h4>Ingrese alumno:</h4>
+
+    <form>
+        <div class="form-group">
+            <label for="">Nombre:</label>
+            <input class="form-control" type="text" [(ngModel)]="alumno.nombre" name="Nombre">
+        </div>
+        <div class="form-group">
+            <label for="">Apellido:</label>
+            <input class="form-control" type="text" [(ngModel)]="alumno.apellido" name="Apellido">
+        </div>
+        <div class="form-group">
+            <label for="">Edad:</label>
+            <input class="form-control" type="number" [(ngModel)]="alumno.edad" name="Edad">
+        </div>
+        <div class="form-group">
+            <label for="">Curso:</label>
+            <input class="m-3" type="checkbox" [(ngModel)]="alumno.curso" name="Curso">
+        </div>
+        <div class="form-group">
+            <label for="">Foto:</label>
+            <input class="form-control" type="text" [(ngModel)]="alumno.foto" name="Nombre">
+        </div>
+
+        <input class="btn btn-success" type="button" (click)="agregar()" value="Agregar Alumnos">
+    </form>
+
+    <div *ngIf="errorForm">
+            <div class="alert alert-success m-3">
+                    Completar todos los datos!</div>
+    </div>
+</div>
+
+    <h5> *ngFor en una tabla:</h5>
+
+    <table class="table" *ngIf="alumnos.length; else mensaje">
+        <!--; else para hacer if else-->
+        <tr class="bg-success text-white">
+            <th>nombre</th>
+            <th>apellido</th>
+            <th>edad</th>
+            <th>curso</th>
+            <th>Foto</th>
+        </tr>
+        <tr *ngFor="let alumno of alumnos; index as i">
+            <td>{{alumno.nombre}}</td>
+            <td>{{alumno.apellido}}</td>
+            <td>{{alumno.edad}}</td>
+            <td>{{alumno.curso? ' Realizado' : 'No realizado'}}</td>
+            <!--para que cambie true y false-->
+            <td><img [src]="alumno.foto" alt="icono del alumno" class="chica"></td>
+        </tr>
+    </table>
+
+    <ng-template #mensaje>
+        <div class="alert alert-success">
+            No hay alumnos que mostrar</div>
+    </ng-template>
+
+    <div class="media my-3" *ngFor="let alumno of alumnos; index as i">
+        <img [src]="alumno.foto" alt="" class="grande">
+        <div class="media-body ml-3">
+            <h4>{{alumno.nombre}} {{alumno.apellido}}
+                <button class="btn btn-warning btn-sm mx-3 text-white" (click)="borrar(i)">X</button></h4>
+            <!--ese i es el de index-->
+            <p><i>{{alumno.edad}} años</i></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore animi ratione rem excepturi,
+                ad natus adipisci voluptatem? Eaque aliquam architecto harum cum vel deserunt commodi nostrum, sit quis
+                nisi?</p>
+            <p>Hizo el curso? <input type="checkbox" [(ngModel)]="alumno.curso"> </p>
+            <hr>
+
+        </div>
+    </div>
+
+
+</div>

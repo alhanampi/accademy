@@ -1,0 +1,21 @@
+.jumbotron {
+    background-color: rgb(25, 116, 25);
+    color: whitesmoke;
+}
+
+hr {
+    background-color: rgba(191, 247, 174, 0.432)
+}
+
+.chica {
+    width: 75px;
+}
+
+.grande {
+    width: 125px;
+}
+
+
+.jumbo2  {
+    background-color: rgb(71, 141, 71);
+}

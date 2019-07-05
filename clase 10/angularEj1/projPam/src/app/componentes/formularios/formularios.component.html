@@ -1,0 +1,45 @@
+<div class="jumbotron">
+    <hr>
+    <h2>Componente formularios</h2>
+    <hr>
+
+    <h3>Reactive forms</h3>
+    <form novalidate [formGroup]="form">
+        <div class="form-group">
+            <label for="">Nombre:</label>
+            <input class="form-control" type="text" formControlName="nombre">
+        </div>
+        <div class="form-group">
+            <label for="">Apellido:</label>
+            <input class="form-control" type="text" formControlName="apellido">
+        </div>
+        <div class="form-group">
+            <label for="">Edad:</label>
+            <input class="form-control" type="number" formControlName="edad">
+        </div>
+        <div class="form-group">
+            <label for="">Curso:</label>
+            <input class="m-3" type="checkbox" formControlName="curso">
+        </div>
+        <div formGroupName="contacto"> <!--para hacer un grupo nuevo-->
+            <div class="form-group">
+                <label for="">Email:</label>
+                <input class="form-control" type="email" formControlName="email">
+            </div>
+            <div class="form-group">
+                <label for="">Teléfono:</label>
+                <input class="form-control" type="number" formControlName="telefono">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Foto:</label>
+            <input class="form-control" type="text" formControlName="foto">
+        </div>
+
+        <input class="btn btn-dark" type="button" (click)="enviar()" value="Enviar">
+    </form>
+    <br>
+    <br>
+    <pre style="color:white"> {{ form.value | json }}</pre> 
+    <!--pre preserva el formato, y en este caso lo hace al pasarle un json.-->
+</div>
