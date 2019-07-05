@@ -9,6 +9,18 @@
             <label for="">Nombre:</label>
             <input class="form-control" type="text" formControlName="nombre">
         </div>
+        <div *ngIf="form.controls.nombre.errors && form.controls.nombre.dirty">
+            <div class="alert bg-dark" *ngIf="form.controls.nombre.errors.required">
+                Este campo es requerido!
+            </div>
+            <div class="alert bg-dark" *ngIf="form.controls.nombre.errors.minlength">
+                Ingrese al menos 3 caracteres!
+            </div>
+            <div class="alert bg-dark" *ngIf="form.controls.nombre.errors.maxlength">
+                Ingrese hasta 16 caracteres!
+            </div>
+        </div>
+
         <div class="form-group">
             <label for="">Apellido:</label>
             <input class="form-control" type="text" formControlName="apellido">
@@ -21,7 +33,8 @@
             <label for="">Curso:</label>
             <input class="m-3" type="checkbox" formControlName="curso">
         </div>
-        <div formGroupName="contacto"> <!--para hacer un grupo nuevo-->
+        <div formGroupName="contacto">
+            <!--para hacer un grupo nuevo-->
             <div class="form-group">
                 <label for="">Email:</label>
                 <input class="form-control" type="email" formControlName="email">
@@ -36,10 +49,10 @@
             <input class="form-control" type="text" formControlName="foto">
         </div>
 
-        <input class="btn btn-dark" type="button" (click)="enviar()" value="Enviar">
+        <input class="btn btn-dark" [disabled]="!form.valid" type="button" (click)="enviar()" value="Enviar">
     </form>
     <br>
     <br>
-    <pre style="color:white"> {{ form.value | json }}</pre> 
+    <pre style="color:white"> {{ form.value | json }}</pre>
     <!--pre preserva el formato, y en este caso lo hace al pasarle un json.-->
 </div>

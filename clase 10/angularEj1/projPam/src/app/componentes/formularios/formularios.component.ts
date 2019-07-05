@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder} from '@angular/forms';
+import { FormGroup, FormBuilder, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-formularios',
@@ -14,7 +14,11 @@ export class FormulariosComponent implements OnInit {
     private fb: FormBuilder
   ) {
     this.form = fb.group({ //grupo de datos
-      nombre: '',
+      nombre: ['', Validators.compose([
+        Validators.required,
+        Validators.maxLength(16),
+        Validators.minLength(3)
+      ])], //[] para hacer validaciones
       apellido: '',
       edad: '',
       curso: '',
