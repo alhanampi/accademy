@@ -1,0 +1,23 @@
+<div class="jumbotron">
+<h2>Form usuarios</h2>
+
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Photo</th>
+        </tr>
+        <tr *ngFor="let user of users">
+           <td>{{user.name}}</td>
+           <td>{{user.username}}</td>
+           <td>{{user.email}}</td>
+           <td>{{user.phone}}</td>
+           <td><img [src]="user.photo" class="photo"></td> 
+        </tr>
+
+    </table>
+
+
+</div>
