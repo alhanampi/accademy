@@ -41,9 +41,49 @@ export class Form02Component implements OnInit {
     },
   ]
 
+  user = {
+    name: '',
+    username: '',
+    email: '',
+    phone: '',
+    photo: ''
+  }
+
+  errorForm: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
-
+ 
+  addUser() {
+    console.log(this.user)
+    if (
+      this.user.name != '' &&
+      this.user.username!= '' &&
+      this.user.email!= '' &&
+      this.user.phone!= '' &&
+      this.user.photo!= '' 
+    ) {
+      this.errorForm = false;
+      this.users.push(this.user)
+      this.user = {
+        name: '',
+        username: '',
+        email: '',
+        phone: '',
+        photo: ''
+      }
+    } else {
+      this.errorForm = true;
+      setTimeout(() => {
+        this.errorForm = false
+      }, 1500);
+    }
+  }
+  
+  erase(index) {
+    console.log(index)
+    this.users.splice(index, 1)
+  }
 }
