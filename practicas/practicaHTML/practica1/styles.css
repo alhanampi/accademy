@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    
+}
+
+
+main {
+    background-color: rgba(182, 97, 97, 0.356);
+    display: flex;
+    flex-direction: column
+}
+
+aside {
+    background-color: rgba(116, 116, 189, 0.342)
+}
+
+.box {
+    height: 700px;
+}
+
+.section2, .section3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexSection {
+    text-align: center
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.asideBox {
+    text-align: center;
+}
