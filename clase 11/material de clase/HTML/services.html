@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Sitio Web</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="icon/png" href="img/icon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header class="jumbotron m-3">
+		<img src="img/logo.png" alt="logo de mi empresa">
+		<h1>Inserte Nombre aquí</h1>
+	</header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<a class="navbar-brand bars" href="#"></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  </button>
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    	<ul class="navbar-nav spacing mr-auto">
+      		<li class="nav-item active">
+        		<a class="nav-link" href="index.html">Inicio 
+        			<span class="sr-only">(current)</span></a>
+      		</li>
+    		<li class="nav-item">
+        		<a class="nav-link" href="products.html">Productos</a>
+ 	   		</li>
+			<li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Servicios
+       			</a>
+	        	<div class="navbar-nav">
+			      <a class="nav-item nav-link active" href="#">
+			      	<span class="sr-only">(current)</span>
+			      </a>
+			      <a class="nav-item nav-link" href="more/products"></a>
+			      <a class="nav-item nav-link" href="#"></a>
+			      <a class="nav-item nav-link disabled" href="#"></a>
+			    </div>
+	        </div>
+	      	</li>
+	    </ul>
+	</div>
+</nav>
+	<main class="main m-3">
+		<section>
+			<h2 id="seccion1">Titulo de Seccion</h2>
+			<img src="img/imagen.png" alt="mi imagen">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptate dolorum eum sequi veniam. Ipsa delectus est consequuntur animi labore ipsam magni maxime adipisci facilis quibusdam amet voluptate, iusto natus.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, blanditiis. Sunt est aliquam nesciunt sed, tempora dicta. Explicabo doloremque vitae, nisi, deleniti amet consequatur placeat in magni laboriosam laudantium expedita!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem quisquam aliquam maxime reiciendis pariatur maiores unde minus sequi veritatis architecto inventore repellat perspiciatis qui similique eligendi, error, vero iure!</p>
+			<button href="products.html">Mas...</button>
+		</section>
+		<section>
+			<h2 id="seccion2">Titulo de Seccion</h2>
+			<img src="img/imagen.png" alt="mi imagen">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptate dolorum eum sequi veniam. Ipsa delectus est consequuntur animi labore ipsam magni maxime adipisci facilis quibusdam amet voluptate, iusto natus.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, blanditiis. Sunt est aliquam nesciunt sed, tempora dicta. Explicabo doloremque vitae, nisi, deleniti amet consequatur placeat in magni laboriosam laudantium expedita!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem quisquam aliquam maxime reiciendis pariatur maiores unde minus sequi veritatis architecto inventore repellat perspiciatis qui similique eligendi, error, vero iure!</p>
+			<button href="services.html">Mas...</button>
+		</section>
+	</main>
+	<footer>
+		<form class="col-6 r-3" action="enviar.php" method="post">
+			<h2>Realiza tu consulta</h2>
+			<input type="text" placeholder="Nombre: Juan perez" name="nombre" />
+			<br/>
+			<input type="email" placeholder="Correo: mail@servidor.com" name="email" required />
+			<br/>
+			<input type="text" placeholder="tel:1123457890" pattern="[0-9]{15}" name="tel" title="Ingrese su numero de telefono sin espacios, ni guiones">
+			<br/>
+			<textarea name="consulta"></textarea>
+			<br/>
+			<input class="btn btn-success" type="submit" value="Enviar"/>
+		</form>
+		<hr>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.017146019183!2d-58.37641557080054!3d-34.60242719489878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3n+IT!5e0!3m2!1ses!2sar!4v1562781429651!5m2!1ses!2sar" width="600" height="300" frameborder="0" allowfullscreen></iframe>
+			<hr>
+			<div class="videos">
+				<ul>
+					<li><a href="https://www.youtube.com/embed/nc7cpfHjnEo" target="mivideo">Video 1: Batman Vs Superman</a>
+					</li>
+					<li><a href="https://www.youtube.com/embed/TtU08LLOCEA" target="mivideo">Video 2: Maria la del Barrio</a>
+					</li>
+					<li><a href="https://www.youtube.com/embed/lJmnFeZwxpg" target="mivideo">Video 3: Star Wars (1,2,3)</a>
+					</li>
+					<li><a href="https://www.youtube.com/embed/9_my9bxS05Y" target="mivideo">Video 4: Crepusculo</a>
+					</li>
+					<li><a href="https://www.youtube.com/embed/yx_Ct__kMtc" target="mivideo">Video 5: Toy Story</a>
+					</li>
+				</ul>
+					<iframe name="mivideo" width="300" height="300" src="https://www.youtube.com/embed/9_my9bxS05Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		<hr>
+		<div class="social">
+			<a class="fa fa-facebook" href="https://www.facebook.com"></a>
+			<a class="fa fa-twitter" href="https://twitter.es"></a>
+			<a class="fa fa-youtube" href="http://www.youtube.com"></a>
+			<a class="fa fa-whatsapp" href="tel:+5412345678"></a>
+		</div>
+		<p>&copy; Todos los derechos reservado | Cristian Racedo &amp; compañia</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* ESTILOS GENERALES*/
+*{
+	box-sizing: border-box;
+}
+
+body, header,nav, main, section, footer{	
+	color:rgba(255,255,255,0.8);
+	background: linear-gradient(45deg,lightgreen,darkgreen);
+}
+
+a, a:hover, a:visited, a:active{
+	color:white;
+	text-decoration: none;
+}
+
+section{
+	padding:2%;
+}
+
+/*tablet Horizontal*/
+@media (min-width:600px) and (max-width:1200px){
+	 header{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	 }
+
+	 main{
+	 	display:flex;
+	 	flex-direction: row;
+	 	justify-content: space-around;
+	 	flex-wrap: wrap;
+	 }
+
+	 section{
+	 	min-width:200px;
+	 	max-width:500px;
+	 	text-align: justify;
+	 }
+
+	 section img{
+	 	float: left;
+	 	margin-right:2rem;
+	 }
+	
+	footer{
+		text-align: center;
+	}
+
+	form{
+		margin:auto;
+	}
+
+	input, textarea, select{
+		box-shadow: 1px 1px 3px rgba(200,255,240,0.8);
+		border-radius: 5px;
+		outline: none;
+		resize: none;
+		min-width:300px; 
+		max-width:600px;
+		border-style: none;
+		margin:0.2rem; 
+	}
+
+	.social{
+		font-size: 2rem;
+	}
+
+	.social a:hover{
+		background-color: #2fc;
+		border-radius: 5px;
+	}
+
+	.social a{
+		padding:1%; 
+	}
+
+	.videos{
+		display: flex;
+		flex-direction: row-reverse;
+		align-content: center;
+		flex-wrap: wrap;
+		text-align: left;
+		padding:1rem;
+	}
+}
+
+/*MONITORES 1366x768*/
+
+/*2732x1536*/
+
+/*5464x3072*/
+
+
+
+
