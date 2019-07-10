@@ -1,0 +1,25 @@
+http://flexboxgrid.com/
+https://mastery.games/p/flexbox-zombies
+https://material.io/
+
+NAVBAR (TODO EL COMPONENTE|header)
+    |_-TOGGLER
+    |_-BRAND(h1)
+    |_-COLLAPSE
+        |_-NAV(nav)
+
+
+http://getbem.com/naming/
+BEM : BLOCK-ELEMENT-MODIFIER
+
+
+CSS PREPROCESING : Son pseudo-leng que extienden a uno real. En el caso de css está LESS(.less) y SASS(.scss)
+
+GUI : Koala
+
+CLI : NPM + NodeJS
+
+npm i -g  less
+npm i -g  sass
+
+

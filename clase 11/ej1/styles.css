@@ -1,0 +1,21 @@
+header {
+    margin-bottom: 25px;
+}
+
+section {
+    background-color: rgb(187, 162, 209);
+}
+
+section div {
+    border: 1px rgb(53, 46, 46) solid;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
