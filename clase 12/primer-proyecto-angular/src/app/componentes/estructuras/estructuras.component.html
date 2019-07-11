@@ -1,0 +1,100 @@
+<div class="jumbotron">
+    <h2>Componente Estructuras</h2>
+    <hr>
+    <hr>
+    <h3><u>Directiva *ngIf</u></h3>
+
+   <pre> {{alumnos2 | json}}</pre>
+
+    <button class="btn btn-info my-2" (click)="mostrar=!mostrar">{{mostrar? 'Ocultar':'Mostrar'}}</button>
+    <p *ngIf="mostrar">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio et, earum delectus aperiam ex officiis fugit
+        aliquam doloremque voluptatum ut aspernatur! Recusandae ab quia temporibus quibusdam error laborum, perferendis
+        iure.
+    </p>
+    <hr>
+    <h3><u>Directiva *ngFor</u></h3>
+    <ul>
+        <li *ngFor="let usuario of usuarios; index as i">
+            {{ usuario }} {{ i + 1}}
+        </li>
+    </ul>
+
+    <div class="jumbotron" style="background-color: purple;color:white;">
+        <h3>Ingrese alumno</h3>
+        <form>
+            <div class="form-group">
+                <label for="">Nombre</label>
+                <input class="form-control" name="nombre" type="text" [(ngModel)]="alumno.nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="">Apellido</label>
+                <input class="form-control" name="apellido" type="text" [(ngModel)]="alumno.apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="">Edad</label>
+                <input class="form-control" name="edad" type="number" [(ngModel)]="alumno.edad" required>
+            </div>
+            <div class="form-group">
+                <label for="">Curso</label>
+                <input class="mx-2" type="checkbox" name="curso" [(ngModel)]="alumno.curso" required>
+            </div>
+            <div class="form-group">
+                <label for="">Foto</label>
+                <input class="form-control" name="foto" type="text" [(ngModel)]="alumno.foto" required>
+            </div>
+
+            <input class="btn btn-success my-3" type="button" (click)="agregar()" value="Agregar">
+
+        </form>
+
+        <div *ngIf="errorDatosFormulario" class="alert alert-warning">
+            Complete todos los campos del formulario
+        </div>
+    </div>        
+
+
+
+    <table *ngIf="alumnos.length; else mensaje" class="table">
+        <tr class="bg-success text-white my-4">
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Curso</th>
+            <th>Foto</th>
+        </tr>
+        <tr *ngFor="let alumno of alumnos">
+            <td>{{ alumno.nombre }}</td>
+            <td>{{ alumno.apellido }}</td>
+            <td>{{ alumno.edad }}</td>
+            <td>{{ alumno.curso? 'Realizado':'No realizado' }}</td>
+            <td>
+                <img [src]="alumno.foto" width="50" alt="{{alumno.nombre}}">
+            </td>
+        </tr>
+    </table>
+    <ng-template #mensaje>
+        <div class="alert alert-danger">
+            No se encontraron alumnos
+        </div>
+    </ng-template>
+
+    <div class="media" *ngFor="let alumno of alumnos; index as i">
+        <img [src]="alumno.foto" width="150" alt="{{alumno.nombre}}">
+        <div class="media-body ml-3">
+            <p><b>Alumno: {{ alumno.nombre }} {{ alumno.apellido }}</b></p>
+            <p><i>Edad: {{ alumno.edad }}</i></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cumque magni! Facere fuga, nostrum
+                laboriosam voluptatum nemo incidunt tempore consectetur ab pariatur accusantium impedit illum laborum
+                voluptates, quos officiis natus.
+            </p>
+            Hizo el curso <input type="checkbox" [(ngModel)]="alumno.curso">
+            <button class="btn btn-danger mx-3" (click)="borrar(i)">X</button>
+            <hr>
+        </div>
+    </div>
+
+
+
+</div>

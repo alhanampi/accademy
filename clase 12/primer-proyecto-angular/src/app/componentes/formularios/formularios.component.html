@@ -1,0 +1,64 @@
+<div class="jumbotron">
+    <h2>Componente Formularios</h2>
+    <hr>
+    <hr>
+
+    <h3>Formularios Reactivos</h3>
+    <form novalidate [formGroup]="form">
+        <div class="form-group">
+            <label for="">Nombre</label>
+            <input class="form-control" formControlName="nombre" type="text">
+        </div>
+        <div *ngIf="form.controls.nombre.errors && form.controls.nombre.dirty">
+            <div class="alert alert-danger" *ngIf="form.controls.nombre.errors.required">
+                Este campo es requerido!
+            </div>
+            <div class="alert alert-danger" *ngIf="form.controls.nombre.errors.minlength">
+                Se deben ingresar al menos 5 caracteres.
+            </div>
+            <div class="alert alert-danger" *ngIf="form.controls.nombre.errors.maxlength">
+                Se deben ingresar como máximo 10 caracteres.
+            </div>
+            <div class="alert alert-danger" *ngIf="form.controls.nombre.errors.conEspacios">
+                No debe dejar espacios en su nombre.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="">Apellido</label>
+            <input class="form-control" formControlName="apellido" type="text">
+        </div>
+        <div class="form-group">
+            <label for="">Edad</label>
+            <input class="form-control" formControlName="edad" type="number">
+        </div>
+        <div class="form-group">
+            <label for="">Curso</label>
+            <input class="mx-2" type="checkbox" formControlName="curso">
+        </div>
+        <div formGroupName="contacto">
+            <div class="form-group">
+                <label for="">Email</label>
+                <input class="form-control" formControlName="email" type="email">
+            </div>
+            <div class="form-group">
+                <label for="">Telefono</label>
+                <input class="form-control" formControlName="telefono" type="number">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Foto</label>
+            <input class="form-control" formControlName="foto" type="text">
+        </div>
+
+        <input class="btn btn-info my-3" [disabled]="!form.valid" type="button" (click)="enviar()" value="Enviar">
+
+    </form>
+
+    <br>
+    <br>
+    <pre style="color:white;">{{ form.value | json }}</pre>
+
+
+
+</div>

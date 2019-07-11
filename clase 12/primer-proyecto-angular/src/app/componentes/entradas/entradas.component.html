@@ -1,0 +1,28 @@
+<div class="jumbotron">
+    <h2>Componente Entradas</h2>
+    <hr>
+    <hr>
+    <h3><u>Interpolación</u></h3>
+    <p>{{ 3 + 5 }}</p>
+    <p>{{ mensaje }}</p>
+
+    <h3><u>Property Binding</u></h3>
+    <input class="form-control" type="text" value="123">
+    <input class="form-control" type="text" value="{{valor1}}">
+    <input class="form-control" type="text" [value]="valor1">
+    
+    <hr>
+    <h3><u>Event Binding</u></h3>
+<!--     <button class="btn btn-warning" (click)="incrementar()">Incrementar {{ contador }}</button> -->
+    <button class="btn btn-warning" (click)="incrementar()">{{ 'Incrementar' + ' ' + contador }}</button>
+    
+    <hr>
+    <h3><u>Doble Data Binding</u></h3>
+    <h5>Manual</h5>
+    <input type="text" [value]="valor2" (input)="actualizar($event)"> {{valor2}} <br>
+    <h5>Automático</h5>
+    <input type="text" [(ngModel)]="valor3"> {{ valor3 }}
+
+    <hr>
+
+</div>
