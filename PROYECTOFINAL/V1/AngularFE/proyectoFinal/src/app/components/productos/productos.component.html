@@ -1,1 +1,17 @@
-<p>productos works!</p>
+<div class="jumbotron">
+
+    <h2>Productos en venta</h2>
+    
+    <div class="row">
+        <div class="my-4">
+            <button class="btn btn-dark" (click)="getProducts()">Ver</button> <!-- como hago para que se cargue automaticamente? -->
+
+            <div class="media" *ngFor="let producto of productos; index as i">
+                <img [src]="producto.foto" alt="">
+                <h3>{{producto.item}}</h3>
+                <p>{{producto.descripcion}}</p>
+                <p>{{producto.precio}}</p>
+            </div>
+        </div>
+    </div>
+</div>

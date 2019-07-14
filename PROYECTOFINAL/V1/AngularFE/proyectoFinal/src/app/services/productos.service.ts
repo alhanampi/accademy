@@ -32,7 +32,7 @@ export class ProductosService {
 
   //get:
   getProd() {
-    return this.http.get<producto>(this.enviroUrl + '/productos'); //todos los productos
+    return this.http.get<productos>(this.enviroUrl + '/productos'); //todos los productos
   }
 
   //post:
