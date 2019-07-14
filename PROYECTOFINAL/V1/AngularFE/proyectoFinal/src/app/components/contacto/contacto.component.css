@@ -6,3 +6,36 @@ form {
 textarea {
     resize: none;
 }
+
+input, textarea {
+    border: none;
+    border-left: 5px solid #FE4A49;
+    background-color: #F4F4F8;
+}
+
+input:hover, textarea:hover {
+    cursor: pointer;
+    background-color: #E6E6EA;
+}
+
+.btn {
+    background-color: #FE4A49;
+    color: #E6E6EA;
+    box-shadow: 3px 3px 3px rgba(170, 170, 170, 0.301);
+}
+
+.btn:hover {
+    font-weight: bold
+}
+
+.mapa {
+    filter: hue-rotate(330deg);
+    filter: brightness(0.3);
+    filter: drop-shadow(2px 2px 5px rgba(163, 155, 155, 0.6));
+}
+
+@media screen and (max-width: 450px) {
+    .mapa {
+        max-width: 450px;
+    }
+}

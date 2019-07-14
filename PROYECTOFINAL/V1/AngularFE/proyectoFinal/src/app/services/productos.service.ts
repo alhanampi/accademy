@@ -7,6 +7,7 @@ export interface producto {
   item: string;
   precio: any; //me conviene que sea any, number o string?
   descripcion: string;
+  categoria: string;
   foto: string;
 }
 
@@ -23,8 +24,10 @@ export class ProductosService {
     item: '',
     precio: '',
     descripcion: '',
+    categoria: '',
     foto: ''
   }
+  
 
   constructor( private http: HttpClient) {} //inyeccion http para usar en node
 

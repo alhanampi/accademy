@@ -1,0 +1,33 @@
+/* paleta: https://coolors.co/app/f0b67f-4ecdc4-f7fff7-ff6b6b-ffe66d */
+
+.jumbotron {
+    background-color: #ecdba8;
+}
+
+h3, p {
+    color: #FE4A49;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;    
+    color: #FE4A49;
+    font-size: 2em;
+    padding-right: 4%;
+}
+
+a:hover {
+    color: rgb(201, 0, 0)
+}
+
+.copy {
+    margin-top: 45px;
+}
+
+col-sm {
+    text-align: center
+}

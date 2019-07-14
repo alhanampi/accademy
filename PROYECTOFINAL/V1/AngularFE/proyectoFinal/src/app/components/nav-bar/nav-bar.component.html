@@ -1,11 +1,12 @@
 <div class="container-fluid">
-    <header class="navbar row navbar-expand-lg bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Tienda</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <nav class="navbar row navbar-expand-lg">
+        <img class="logo" src="../../../assets/banner-footer/logo.png" alt="logo">
+        <a class="navbar-brand" href="#">Tienda Geek</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i class="fa fa-angle-down"></i>
+              <!-- <span class="navbar-toggler-icon"></span> -->
             </button>
 
-        <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
@@ -15,10 +16,11 @@
                         Productos
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" routerLink="#">Star Wars</a>
-                        <a class="dropdown-item" routerLink="#">Pokemon</a>
-                        <a class="dropdown-item" routerLink="#">Doctor Who</a>
-                        <a class="dropdown-item" routerLink="#">Avengers</a>
+                        <a class="dropdown-item" routerLink="/productos">Todos</a>
+                        <a class="dropdown-item" routerLink="/productos/sw">Star Wars</a>
+                        <a class="dropdown-item" routerLink="/productos/pk">Pokemon</a>
+                        <a class="dropdown-item" routerLink="/productos/dw">Doctor Who</a>
+                        <a class="dropdown-item" routerLink="/productos/av">Avengers</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -31,11 +33,13 @@
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                <a class="nav-link text-light" routerLink="/cart"><i class="fa fa-shopping-cart"></i></a>
-                <a class="nav-link text-light" routerLink="/login">Loguear</a>
+                <a class="nav-link" routerLink="/cart"><i class="fa fa-shopping-cart"></i></a>
+                <a class="nav-link" routerLink="/login">Loguear</a>
             </form>
-        </nav>
+        </div>
         
-    </header>
+    </nav>
     <router-outlet></router-outlet>
 </div>
+
+

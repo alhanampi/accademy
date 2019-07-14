@@ -1,0 +1,18 @@
+nav {
+    background-color: #FE4A49;
+    box-shadow: 3px 3px 3px rgba(170, 170, 170, 0.301);
+}
+
+.logo {
+    width: 5%;
+}
+
+a, .fa {
+    text-decoration:  none;
+    color: #E6E6EA;
+    font-size: 1.1em;
+}
+
+a:hover {
+    color: #FED766;
+}
