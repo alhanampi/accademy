@@ -19,8 +19,7 @@ const routes: Routes = [
   {path: 'productos', component: ProductosComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contacto', component: ContactoComponent},
- 
-
+  {path: 'productos/:id', component: ProductoComponent},
 ]
 
 @NgModule({
@@ -40,13 +39,12 @@ const routes: Routes = [
     HttpClientModule,
     RouterModule.forRoot (
       routes, {
-        enableTracing: !true //deshabilitar
+        enableTracing: !true 
       }
     )
-    
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

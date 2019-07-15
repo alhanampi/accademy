@@ -22,14 +22,16 @@ const productoSchema = new Schema({
     descripcion: String,
     categoria: String,
     foto: String,
+    
 })
 
 const modelo = mongoose.model('productos', productoSchema); //ver que productos no de problemas con todo lo que ya se llama así
 
 //read/get:
-function readDB(prod) { //puedo prescindir del prod?
+function readDB(id) { 
     return new Promise((resolve, reject) => {
-        modelo.find({}, (err, prods) =>{ 
+        let query = id!=undefined ? {id: id} : {};
+        modelo.find(query, (err, prods) =>{ 
             if(err) reject(err)
             else resolve(prods)
         })
@@ -110,7 +112,7 @@ function conectarDB(cb) {
         if(err) return console.log(`Error en conexión: ${err}`);
         console.log('base de datos conectada');
 
-        iniDB() //funcion carga de base de datos harcodeada
+      //  iniDB() //funcion carga de base de datos harcodeada
 
         if(cb) cb() //callback de conectarDB de server.js
     })

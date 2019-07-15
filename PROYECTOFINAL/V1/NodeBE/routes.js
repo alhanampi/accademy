@@ -8,6 +8,14 @@ function getProd(req, res) {
         .catch(err => res.send({ data: err }))
 }
 
+function getUnProd(req, res) {
+    let producto = req.params.id;
+    console.log(producto) //tengo que pasar el producto a kla db con un read
+    db.readDB(producto)
+         .then(productos => res.send({ data: productos }))
+         .catch(err => res.send({ data: err }))
+}
+
 //post:
 function postProd(req, res) {
     let producto = req.body;
@@ -47,6 +55,7 @@ function notFound(req, res) {
 //exports:
 module.exports = {
     getProd,
+    getUnProd,
     postProd,
     putProd,
     deleteProd,

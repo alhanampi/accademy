@@ -4,11 +4,14 @@ import { environment } from '../../environments/environment';
 
 //interfaces:
 export interface producto {
-  item: string;
-  precio: any; //me conviene que sea any, number o string?
+  id: any;
+  item: any;
+  precio: any; 
   descripcion: string;
   categoria: string;
   foto: string;
+  peso: string;
+
 }
 
 export interface productos {//data va a venir de node
@@ -21,11 +24,13 @@ export interface productos {//data va a venir de node
 export class ProductosService {
 
   datosProducto: producto = {
+    id: '',
     item: '',
     precio: '',
     descripcion: '',
     categoria: '',
-    foto: ''
+    foto: '',
+    peso: ''
   }
   
 
@@ -36,6 +41,17 @@ export class ProductosService {
   //get:
   getProd() {
     return this.http.get<productos>(this.enviroUrl + '/productos'); //todos los productos
+  }
+
+  //get de uno solo:
+  getUnProd(id) { //falla tanto di paso producto como si paso productos
+    return this.http.get<productos>(this.enviroUrl + '/productos/' + id); 
+  }
+
+  //get test:
+
+  getTest() { //sacar cuando funcione
+    return this.http.get(this.enviroUrl + '/test/');
   }
 
   //post:

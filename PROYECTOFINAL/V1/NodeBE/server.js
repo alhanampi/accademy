@@ -24,6 +24,7 @@ app.get('/', function(req, res){}) //si entra a static no entra a esta
 
 //rutas de la app:
 app.get('/productos', routes.getProd);
+app.get('/productos/:id', routes.getUnProd); //para recibir uno solo
 app.post('/productos', routes.postProd); //están en routes
 app.delete('/productos/:id', routes.deleteProd);
 app.put('/productos/:id', routes.putProd);
