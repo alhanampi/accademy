@@ -6,7 +6,7 @@
         <div class="my-4">
             <button class="btn btn-dark" (click)="getProducts()">Ver</button> <!-- como hago para que se cargue automaticamente? -->
 
-            <div class="media" *ngFor="let producto of productos; index as i">
+            <div class="media" *ngFor="let producto of listado; index as i">
                 <img [src]="producto.foto" alt="">
                 <h3>{{producto.item}}</h3>
                 <p>{{producto.descripcion}}</p>

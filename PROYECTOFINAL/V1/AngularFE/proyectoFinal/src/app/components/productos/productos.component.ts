@@ -8,14 +8,15 @@ import { ProductosService, productos, producto } from '../../services/productos.
 })
 export class ProductosComponent implements OnInit {
 
-  listaProd: string[] = [];
+  listado: string[] = [];
   datosProductosPost: producto;
 
   constructor(private productosService: ProductosService) {
-    this.datosProductosPost = this.productosService.datosProducto //datos producto viene del servicio
+    this.datosProductosPost = productosService.datosProducto //datos producto viene del servicio
   }
 
   ngOnInit() {
+    this.getProducts()
   }
 
   //get:
@@ -23,7 +24,7 @@ export class ProductosComponent implements OnInit {
     this.productosService.getProd()
       .subscribe( (prods : productos) => { //por qué marca error?
         console.log('getProducts: ' + prods.data)
-        this.listaProd = prods.data
+        this.listado = prods.data
       })
   }
 

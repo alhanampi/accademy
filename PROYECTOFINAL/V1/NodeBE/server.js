@@ -13,6 +13,8 @@ const PORT = 8080;
 //express:
 const app = express();
 
+
+
 //use:
 //app.use(express.static(__dirname + '/views')) //probablemente no necesite esto
 app.use(cors());
