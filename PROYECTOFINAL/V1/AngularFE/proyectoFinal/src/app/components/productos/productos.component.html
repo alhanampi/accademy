@@ -1,17 +1,21 @@
-<div class="jumbotron">
+<div class="jumbotron jumbotron-fluid">
 
     <h2>Productos en venta</h2>
     
-    <div class="row">
-        <div class="my-4">
-            <button class="btn btn-dark" (click)="getProducts()">Ver</button> <!-- como hago para que se cargue automaticamente? -->
+<!--  -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let producto of listado; index as i">
+        <div class="card" style="width: 17rem;">
+            <div class="card-body">
 
-            <div class="media" *ngFor="let producto of listado; index as i">
-                <img [src]="producto.foto" alt="">
-                <h3>{{producto.item}}</h3>
-                <p>{{producto.descripcion}}</p>
-                <p>{{producto.precio}}</p>
+                <img class="card-img-top" [src]="producto.foto" alt="Card image cap">
+                    <h5 class="card-title">{{producto.item}}</h5>
+                    <p class="card-subtitle">{{producto.precio}}</p>
+                    <p class="card-text">{{producto.descripcion}}</p>
+                    <a href="#" class="btn">Detalles</a>
+                </div>
+ 
             </div>
         </div>
-    </div>
+    </div>   
 </div>

@@ -1,5 +1,5 @@
 //base de datos:
-const db = require('/db');
+const db = require('./db');
 
 //get:
 function getProd(req, res) {

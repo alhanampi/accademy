@@ -6,3 +6,15 @@ p, a {
     font-family: 'Work Sans', sans-serif;
 }
 
+
+.btn {
+    background-color: #FE4A49;
+    color: #E6E6EA;
+    box-shadow: 3px 3px 3px rgba(170, 170, 170, 0.301);
+}
+
+.btn:hover {
+    background-color: rgb(214, 15, 15);
+    color: #E6E6EA;
+    cursor: pointer;
+}

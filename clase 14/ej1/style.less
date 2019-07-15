@@ -1,0 +1,28 @@
+@color-primario: rgb(118, 160, 111);
+
+//mixin:
+
+.fondo(@url) { //url como parametro permite que el fondo se pueda pasar abajo
+    background-image: url(@url);
+    background-size: cover;
+    background-size: no-repeat;
+    background-position: center top;
+}
+
+body {
+    background-color: @color-primario;
+    .fondo('./img/fondo1.jpg');
+    header {
+        h1 {
+            color: cornsilk;
+            &:hover {
+                color: darkgoldenrod;
+            }
+        }
+    }
+    main {
+        h1 {
+            color: crimson;
+        }
+    }
+}

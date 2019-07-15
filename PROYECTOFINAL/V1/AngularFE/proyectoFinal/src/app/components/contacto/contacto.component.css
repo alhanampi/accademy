@@ -5,6 +5,7 @@ form {
 
 textarea {
     resize: none;
+    height: 100px;
 }
 
 input, textarea {
@@ -25,17 +26,5 @@ input:hover, textarea:hover {
 }
 
 .btn:hover {
-    font-weight: bold
-}
-
-.mapa {
-    filter: hue-rotate(330deg);
-    filter: brightness(0.3);
-    filter: drop-shadow(2px 2px 5px rgba(163, 155, 155, 0.6));
-}
-
-@media screen and (max-width: 450px) {
-    .mapa {
-        max-width: 450px;
-    }
+    background-color: rgb(180, 26, 26)
 }

@@ -1,0 +1,16 @@
+body {
+  background-color: #76a06f;
+  background-image: url('img/fondo1.jpg');
+  background-size: cover;
+  background-size: no-repeat;
+  background-position: center top;
+}
+body header h1 {
+  color: cornsilk;
+}
+body header h1:hover {
+  color: darkgoldenrod;
+}
+body main h1 {
+  color: crimson;
+}

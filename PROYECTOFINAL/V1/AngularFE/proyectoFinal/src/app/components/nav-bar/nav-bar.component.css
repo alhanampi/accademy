@@ -1,4 +1,4 @@
-nav {
+nav, .dropdown-menu {
     background-color: #FE4A49;
     box-shadow: 3px 3px 3px rgba(170, 170, 170, 0.301);
 }

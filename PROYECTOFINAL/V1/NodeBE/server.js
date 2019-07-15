@@ -5,7 +5,7 @@ const cors = require('cors');
 
 //archivos creados:
 const routes = require('./routes'); //devolver objeto almacenado en routes
-const db = require('./db');
+const db = require('./db.js');
 
 //puerto node:
 const PORT = 8080;
@@ -31,7 +31,7 @@ app.put('/productos/:id', routes.putProd);
 app.get('*', routes.notFound);
 
 //conexion db. El callback cb viene por db.js:
-db.conectDB(() => {
+db.conectarDB(() => {
     app.listen(PORT, err => {
         if (err) return console.log(`Error express: ${err}`);
         console.log(`Server express OK en ${PORT}`);

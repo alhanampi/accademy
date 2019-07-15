@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 //conexion db:
-MongoClient.connect(url, function(err, db) {
+MongoClient.connect(urlMongo, function(err, db) {
   if (err) throw err;
   console.log("DB ok!");
   db.close();
