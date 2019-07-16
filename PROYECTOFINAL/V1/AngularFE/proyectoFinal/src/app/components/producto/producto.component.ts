@@ -4,30 +4,31 @@ import { ProductosService, productos, producto } from '../../services/productos.
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.component.html',
-  styleUrls: ['./producto.component.sass']
+  styleUrls: ['./producto.component.css']
 })
 export class ProductoComponent implements OnInit {
 
-  //listado: string[] = []; //listado no es necesario
-  datosProductosPost: producto;
+  datosProd: producto;
 
   constructor(private productosService: ProductosService) {
-    this.datosProductosPost = productosService.datosProducto.id //sumé este id y cambié abajo el tipo a any
+    this.datosProd = productosService.datosProducto.id 
    }
 
   ngOnInit() {
-    this.getUnProd(this.datosProductosPost); // console.log no da data
-    console.log(this.datosProductosPost)
+    this.verProducto(this.productosService.prodCode); 
+    console.log(this.productosService.prodCode)
   }
 
-      //ver productos individuales:
-      getUnProd(id: any) {
+
+      verProducto(id: any) {
         this.productosService.getUnProd(id)
-        .subscribe( (prods : productos) => { 
-          console.log('hola', prods.data[0]) //me da la posicion 0 de la db
-     //     this.datosProductosPost = prods.data[0];
-            //this.datosProductosPost 
+        .subscribe( (prod : producto) => { 
+          console.log(prod)
+           this.datosProd = prod
         })
       } 
 
+  comprar() {
+    console.log('compraste un producto!')
+  }
 }

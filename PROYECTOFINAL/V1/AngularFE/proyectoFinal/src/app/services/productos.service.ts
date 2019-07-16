@@ -38,6 +38,8 @@ export class ProductosService {
 
   private enviroUrl: string = environment.production? '' : 'http://localhost:8080'; //conexion a node
 
+  prodCode : number;
+
   //get:
   getProd() {
     return this.http.get<productos>(this.enviroUrl + '/productos'); //todos los productos
@@ -45,7 +47,7 @@ export class ProductosService {
 
   //get de uno solo:
   getUnProd(id) { //falla tanto di paso producto como si paso productos
-    return this.http.get<productos>(this.enviroUrl + '/productos/' + id); 
+    return this.http.get<producto>(this.enviroUrl + '/productos/' + id); 
   }
 
   //get test:

@@ -12,20 +12,18 @@ MongoClient.connect(urlMongo, function(err, db) {
   console.log("DB ok!");
   db.close();
 });
-//ver si esto anda
 
 //schema de producto:
 const productoSchema = new Schema({
-    id: Number, //es number? porque esto lo pone mongo
+    id: Number, 
     item: String,
-    precio: String, //en productos.service.ts lo pasé como any, ver si da errores
+    precio: String, 
     descripcion: String,
     categoria: String,
-    foto: String,
-    
+    foto: String,  
 })
 
-const modelo = mongoose.model('productos', productoSchema); //ver que productos no de problemas con todo lo que ya se llama así
+const modelo = mongoose.model('productos', productoSchema); 
 
 //read/get:
 function readDB(id) { 
@@ -117,6 +115,18 @@ function conectarDB(cb) {
         if(cb) cb() //callback de conectarDB de server.js
     })
 }
+
+//users:
+
+// const userSchema = new Schema({
+//     id: Number, 
+//     nombre: String,
+//     email: String, 
+//     password: String,
+// })
+
+// const usuarioSchema = mongoose.model('productos', userSchema); 
+
 
 
 module.exports = {

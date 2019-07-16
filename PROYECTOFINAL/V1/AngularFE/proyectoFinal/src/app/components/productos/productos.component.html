@@ -12,8 +12,7 @@
                     <h5 class="card-title">{{producto.item}}</h5>
                     <p class="card-subtitle">{{producto.precio}}</p>
                     <p class="card-text">{{producto.descripcion}}</p>
-                    <!-- <a class="btn" (click)="verProducto(producto.id)">{{producto.id}}Detalles</a> -->
-                          <a class="btn" (click)="verProducto()" [routerLink]="['/productos/', producto.id]">{{producto.id}}Detalles</a>
+                        <a class="btn" (click)="verProducto(producto.id)" [routerLink]="['/productos/', producto.id]">Detalles</a>
                 </div>
  
             </div>

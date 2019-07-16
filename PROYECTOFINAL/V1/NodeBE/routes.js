@@ -12,7 +12,7 @@ function getUnProd(req, res) {
     let producto = req.params.id;
     console.log(producto) //tengo que pasar el producto a kla db con un read
     db.readDB(producto)
-         .then(productos => res.send({ data: productos }))
+         .then(producto => res.send({data:producto[0]}))
          .catch(err => res.send({ data: err }))
 }
 

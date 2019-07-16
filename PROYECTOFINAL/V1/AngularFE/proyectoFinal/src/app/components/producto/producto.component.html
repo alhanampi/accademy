@@ -1,12 +1,38 @@
 <section>
-    <h2>test</h2>
+    <h2>{{datosProd.data.item}}</h2>
+    <!-- <div class="row">
+        <div class="col">
+        
 
-    <h2>{{datosProductosPost.item}}</h2>
-    <img [src]="datosProductosPost.foto" alt="">
-<!-- 
-    <h2>{{listado.item}}</h2>
-    <img [src]="listado.foto" alt=""> -->
+                <img  class="fotoProd" [src]="datosProd.data.foto" alt={{datosProd.data.foto}}> 
+       
+        </div>
+        <div class="col">
+            <p>{{datosProd.data.descripcion}}</p>
+            <h5>{{datosProd.data.precio}}</h5>
+            <button class="btn" (click)="comprar()">Comprar</button>
+          
+        </div>
+    </div> -->
+<div class="container">
 
+    <div class="card flex-row flex-wrap">
+            <div class="row no-gutters">
+                <div class="col-auto">
+                    <img [src]="datosProd.data.foto" class="img-fluid fotoProd" alt="">
+                </div>
+                <div class="col">
+                    <div class="card-block px-2">
+                        <h4 class="card-title">{{datosProd.data.precio}}</h4>
+                        <p class="card-text">{{datosProd.data.descripcion}}</p>
+                        <button class="btn" (click)="comprar()">Comprar</button>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+    </div>
+        
 
 
 </section>

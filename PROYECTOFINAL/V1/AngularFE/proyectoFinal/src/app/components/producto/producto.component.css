@@ -1,0 +1,12 @@
+.fotoProd {
+    width: 400px;
+    margin: 2%;
+}
+
+.card {
+    box-shadow: 3px 3px 3px rgba(170, 170, 170, 0.301);
+}
+
+.col {
+    margin-left: 2%;
+}

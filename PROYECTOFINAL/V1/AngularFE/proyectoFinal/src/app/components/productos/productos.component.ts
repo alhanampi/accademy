@@ -13,7 +13,9 @@ export class ProductosComponent implements OnInit {
   productoIDSTR: string = '/productos/6';
 
   constructor(private productosService: ProductosService) {
+
     this.datosProductosPost = productosService.datosProducto //datos producto viene del servicio
+    
   }
 
   ngOnInit() {
@@ -30,23 +32,10 @@ export class ProductosComponent implements OnInit {
   }
 
     //ver productos individuales:
-    verProducto(id: number) {
-      this.productosService.getUnProd(id)
-      .subscribe( (prods : productos) => { 
-        console.log(prods)
-        // console.log('getProducts: ' + prods.data)
-        // this.listado = prods.data
-      })
-    } 
+     verProducto(id: number) {
 
-  //verificar data, pasarlo a saveProd:
-/* necesito esto?
-  checkDataProd() {
-    if (this.datosProductosPost.item != '' && this.datosProductosPost.precio != '' && this.datosProductosPost.descripcion != '' && this.datosProductosPost.foto != '')
-      return true;
-    else
-      return false;
-  }*/
+    this.productosService.prodCode = id 
+       }
 
 
 }
